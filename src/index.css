@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(39, 38, 38);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  padding: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.introSection {
+  width: 100%;
+  height: 700px;
+}
+
+.backgroundFigures {
+  position:absolute;
+  background-color: rgb(122, 45, 194);
+  border-radius: 50%;
+  z-index: 3;
+}
+.backgroundTextArea {
+  background-color: rgb(39, 38, 38);
+  border: 1px solid rgb(122, 45, 194);
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+.below {
+  z-index: 1;
+}
+
+.veryBig {
+  background-color: white;
+  height: 480px;
+  width: 480px;
+}
+
+.big {
+  height: 300px;
+  width: 300px;
+}
+
+.medium {
+  height: 100px;
+  width: 100px;
+}
+
+.small {
+  height: 60px;
+  width: 60px;
+}
+
+.verySmall {
+  height: 30px;
+  width: 30px;
+}
+
+.projectSection {
+  display:flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+

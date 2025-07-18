@@ -1,0 +1,22 @@
+{
+  "en": {
+    "header": {
+      "Contact": "Contact",
+      "description": "This is the English homepage."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "We build awesome stuff."
+    }
+  },
+  "lv": {
+    "header": {
+      "Contact": "Kontakti",
+      "description": "Šī ir sākumlapa latviešu valodā."
+    },
+    "about": {
+      "title": "Par mums",
+      "description": "Mēs veidojam lieliskas lietas."
+    }
+  }
+}

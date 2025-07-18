@@ -5,8 +5,13 @@ article {
     border: 1px solid rgb(122, 45, 194);
     border-radius: 20px;
     transition: 0.5s;
+    z-index: 55;
     color: white;
     
+}
+
+article p {
+    color: rgb(199, 199, 199);
 }
 
 article:hover {

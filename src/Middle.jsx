@@ -27,10 +27,10 @@ function Middle(){
             <h1 id="experiance">EXPERIANCE AND EDUCATION</h1>
             <h1 id="projects">PROJECTS</h1>
             <div className='projectSection'>
-                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
-                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
-                <Projects title="SEO" explanation="Explanation" image={SEO_Screenshot} location="https://seo-vtdt-project.vercel.app/"/>
-                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
+                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} alt="Disciplinators Webpage" location="https://disciplinators.kesug.com/"/>
+                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} alt="" location="https://disciplinators.kesug.com/"/>
+                <Projects title="SEO" explanation="Explanation" image={SEO_Screenshot} alt="SEO Webpage" location="https://seo-vtdt-project.vercel.app/"/>
+                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} alt="" location="https://disciplinators.kesug.com/"/>
             </div>
         </main>
     );

@@ -1,5 +1,6 @@
 import Projects from './Projects/Projects.jsx'
 import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
+import SEO_Screenshot from './assets/SEO_screenshot.png'
 
 function Middle(){
 
@@ -28,7 +29,7 @@ function Middle(){
             <div className='projectSection'>
                 <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
                 <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
-                <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
+                <Projects title="SEO" explanation="Explanation" image={SEO_Screenshot} location="https://seo-vtdt-project.vercel.app/"/>
                 <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} location="https://disciplinators.kesug.com/"/>
             </div>
         </main>

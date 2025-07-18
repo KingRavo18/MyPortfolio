@@ -78,3 +78,10 @@ main {
   flex-wrap: wrap;
 }
 
+.experianceSection {
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: auto;
+}

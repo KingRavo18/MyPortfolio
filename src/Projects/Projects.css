@@ -16,6 +16,8 @@ article p {
 
 article:hover {
     border: 1px solid rgb(153, 89, 212);
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 article h2 {

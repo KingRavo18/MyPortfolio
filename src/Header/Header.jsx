@@ -10,7 +10,7 @@ function Header(){
                     <li><button className="text-[150%]">EN</button></li>
                 </ul>
             </nav>
-            <nav className="Navigation ml-[720px]">
+            <nav className="Navigation ml-[60%]">
                 <ul>
                     <li><a href="#contact"><button>Contact</button></a></li>
                     <li><a href="#projects"><button>Projects</button></a></li>

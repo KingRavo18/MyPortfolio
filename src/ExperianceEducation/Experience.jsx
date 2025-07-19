@@ -3,20 +3,17 @@ import './Experience.css'
 function popupEducation() {
     const popup = document.getElementById("Education_Popup");
 
-    if (popup.style.display === "block") {
-        popup.style.display = "none";
-    } else {
-        popup.style.display = "block";
-    }
+    popup.style.display === "block" ? 
+    popup.style.display = "none" : 
+    popup.style.display = "block";
 }
+
 function popupExperience() {
     const popup2 = document.getElementById("Experience_Popup");
 
-    if (popup2.style.display === "block") {
-        popup2.style.display = "none";
-    } else {
-        popup2.style.display = "block";
-    }
+    popup2.style.display === "block" ? 
+    popup2.style.display = "none" : 
+    popup2.style.display = "block";
 }
 
 function Experience() {

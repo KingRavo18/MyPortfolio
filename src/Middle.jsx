@@ -24,12 +24,15 @@ function Middle(){
                 <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
                     <h1 className="mt-[8%]">Raivo Kingovskis</h1>
                     <p>Hello, I started programming for money but grew to enjoy it as well. 
-                        So win, win! I studied it for four years and have gone through an internship too.
-                        <br></br>
-                        My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well.
-                        In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.
-                        <br></br>
-                        Read further for details!
+                       So win, win! 
+                       I studied it for four years and have gone through an internship too.
+                       <br></br>
+                       My greatest strengths focus on all things front-end and database related. 
+                       However, I have ample experience with the backend as well.
+                       In my free time, I like reading novels, and I do try to write them myself. 
+                       I am as thorough with my code as with any word I read or write for the sake of my art.
+                       <br></br>
+                       Read further for details!
                     </p>
                 </div>
 

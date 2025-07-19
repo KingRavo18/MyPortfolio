@@ -1,6 +1,9 @@
 import './Header.css'
+import translations from '../languages/translations.json';
 
 function Header(){
+
+    const t = translations.header;
 
     return(
         <header>
@@ -12,10 +15,10 @@ function Header(){
             </nav>
             <nav className="Navigation ml-[60%]">
                 <ul>
-                    <li><a href="#contact"><button>Contact</button></a></li>
-                    <li><a href="#projects"><button>Projects</button></a></li>
-                    <li><a href="#experiance"><button>Experiance and Education</button></a></li>
-                    <li><a href="#introduction"><button>Introduction</button></a></li>
+                    <li><a href="#contact"><button>{t.contact}</button></a></li>
+                    <li><a href="#projects"><button>{t.projects}</button></a></li>
+                    <li><a href="#experiance"><button>{t.experience}</button></a></li>
+                    <li><a href="#introduction"><button>{t.introduction}</button></a></li>
                 </ul>
             </nav>
         </header>

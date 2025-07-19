@@ -81,7 +81,7 @@ function Middle(){
                 <Projects title="Sandbox" explanation="Explanation" image={SandboxScreenshot} alt="Sandbox Design Webpage" location="https://smuka-lapa.vercel.app/"/>
                 <Projects title="Disciplinators" explanation="Explanation" image={DisciplinatorsScreenshot} alt="Disciplinators Webpage" location="https://disciplinators.kesug.com/"/>
                 <Projects title="SEO" explanation="Explanation" image={SEO_Screenshot} alt="SEO Webpage" location="https://seo-vtdt-project.vercel.app/"/>
-                <Projects title="Magic 8-Ball" explanation="Made for fun with javascript and simple css. A true, undisputable masterpiece." image={Magic8BallScreenshot} alt="Magic 8-Ball Webpage" location="https://github.com/KingRavo18/Magic-8-ball"/>
+                <Projects title="Magic 8-Ball" explanation="Made for fun with javascript and simple css. A true, undisputable masterpiece." image={Magic8BallScreenshot} alt="Magic 8-Ball Webpage" location="https://magic-8-ball-seven.vercel.app/"/>
             </div>
 
             {/* Purple Circles (not important) */}

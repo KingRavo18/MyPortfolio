@@ -5,19 +5,22 @@ import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
 import SEO_Screenshot from './assets/SEO_screenshot.png'
 import SandboxScreenshot from './assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from './assets/Magic_8-Ball_Screenshot.png'
-import translations from './languages/translations.json';
+import translations from './Languages/translations.json';
 
 function Middle(){
 
-function popupEducation() {
-    const popup = document.getElementById("Education_Popup");
-    popup.style.display === "block" ? popup.style.display = "none" : popup.style.display = "block";
-}
-function popupExperience() {
-    const popup2 = document.getElementById("Experience_Popup");
-    popup2.style.display === "block" ? popup2.style.display = "none" : popup2.style.display = "block";
-}
+    //The function that activates the slider that appears or disappears when the purple button "EDUCATION" is clicked
+    function popupEducation() {
+        const popup = document.getElementById("Education_Popup");
+        popup.style.display === "block" ? popup.style.display = "none" : popup.style.display = "block";
+    }
+    //The function that activates the slider that appears or disappears when the purple button "EXPERIENCE" is clicked
+    function popupExperience() {
+        const popup2 = document.getElementById("Experience_Popup");
+        popup2.style.display === "block" ? popup2.style.display = "none" : popup2.style.display = "block";
+    }
 
+    //The variable that retrieves all the the webpage's text from a .json file
     const t = translations.en.middle;
 
     return(
@@ -26,14 +29,12 @@ function popupExperience() {
             <div className="introSection">
 
                 {/* The circle where my introduction will be written */}
-
                 <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
                     <h1 className="mt-[8%]">Raivo Kingovskis</h1>
                     <p>{t.bigIntro1}<br/>{t.bigIntro2}<br/>{t.bigIntro3}</p>
                 </div>
 
                 {/* Circle where the image of my face goes */}
-
                 <div className="veryBig backgroundFigures below left-[42%] top-[13%]">
                     <img src="" alt={t.imageAlt}></img>
                 </div>
@@ -41,7 +42,6 @@ function popupExperience() {
             </div>
 
             {/* The section where my experiance and education are described */}
-
             <div className='experianceSection'>
                 <Experience function={popupEducation} 
                             ID="Education_Popup" 
@@ -56,7 +56,6 @@ function popupExperience() {
             </div>
 
             {/* My Projects */}
-
             <h1 id="projects">{t.projectsTitle}</h1>
             <div className='projectSection'>
                 <Projects title="Sandbox" 

@@ -20,7 +20,6 @@ function Middle(){
         popup2.style.display === "block" ? popup2.style.display = "none" : popup2.style.display = "block";
     }
 
-    //The variable that retrieves all the the webpage's text from a .json file
     const t = translations.en.middle;
 
     return(

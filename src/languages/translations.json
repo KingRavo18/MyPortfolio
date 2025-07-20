@@ -8,7 +8,22 @@
     "middle": {
       "bigIntro1": "Hello, I started programming for money but grew to enjoy it as well. So win, win! I studied it for four years and have gone through an internship too.",
       "bigIntro2": "My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well. In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.",
-      "bigIntro3": "Read further for details!"
+      "bigIntro3": "Read further for details!",
+      "imageAlt": "Picture of Raivo Kingovskis",
+      "educationTitle": "EDUCATION",
+      "educationExplanation1": "Nothing",
+      "experienceTitle": "EXPERIENCE",
+      "experienceExplanation1": "Nothing",
+      "projectsTitle": "PROJECTS",
+      "project1Explanation": "Explanation",
+      "project2Explanation": "Explanation",
+      "project3Explanation": "Explanation",
+      "project4Explanation": "Made for fun with javascript and simple css. A true, undisputable masterpiece.",
+      "project1Alt": "Sandbox Design Webpage",
+      "project2Alt": "Disciplinators Webpage",
+      "project3Alt": "SEO Webpage",
+      "project4Alt": "Magic 8-Ball Webpage",
+      "buttonName": "Visit"
     },
     "footer": {
       "contactTitle": "Contact",

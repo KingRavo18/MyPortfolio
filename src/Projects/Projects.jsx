@@ -11,7 +11,7 @@ function Projects(props) {
                 <p>{props.explanation}</p>
             </div>
             <div className='linkContainer'>
-                <a href={props.location}>Visit</a>
+                <a href={props.location}>{props.buttonName}</a>
             </div>
         </article>
     );

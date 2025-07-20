@@ -1,14 +1,15 @@
 import './Experience.css'
 
-function Experience(props) {
+function Experience({func, title, ID, desc1}) {
 
     return(
         <>
-            <article onClick={props.function}>
-                <h1>{props.title}</h1>
+            <article onClick={func}>
+                <h1>{title}</h1>
             </article>
-            <div id={props.ID} className='slidedown'>
-                <p>{props.desc1}</p>
+
+            <div id={ID} className='slidedown'>
+                <p>{desc1}</p>
             </div>
         </>
     );

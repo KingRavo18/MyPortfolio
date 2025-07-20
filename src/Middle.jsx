@@ -42,12 +42,12 @@ function Middle(){
 
             {/* The section where my experiance and education are described */}
             <div className='experianceSection'>
-                <Experience function={popupEducation} 
+                <Experience func={popupEducation} 
                             ID="Education_Popup" 
                             title={t.educationTitle} 
                             desc1={t.educationExplanation1}
                 />
-                <Experience function={popupExperience} 
+                <Experience func={popupExperience} 
                             ID="Experience_Popup" 
                             title={t.experienceTitle} 
                             desc1={t.experienceExplanation1}
@@ -56,6 +56,7 @@ function Middle(){
 
             {/* My Projects */}
             <h1 id="projects">{t.projectsTitle}</h1>
+
             <div className='projectSection'>
                 <Projects title="Sandbox" 
                           explanation={t.project1Explanation} 

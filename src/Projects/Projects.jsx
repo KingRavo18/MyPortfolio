@@ -1,18 +1,26 @@
 import './Projects.css'
 
-function Projects(props) {
+function Projects({image, alt, title, explanation, location, buttonName}) {
     return(
         <article>
             <div className='imageContainer'>
-                <img src={props.image} alt={props.alt}></img>
+                <img src={image} alt={alt || 'Project image'} loading="lazy" />
             </div>
-            <h2>{props.title}</h2>
+
+            <h2>{title || "Project title"}</h2>
+
             <div className='explenationContainer'>
-                <p>{props.explanation}</p>
+                <p>{explanation || "Very good website"}</p>
             </div>
-            <div className='linkContainer'>
-                <a href={props.location}>{props.buttonName}</a>
-            </div>
+
+            {location && (
+                <div className='linkContainer'>
+                    <a href={location} target="_blank" rel="noopener noreferrer">
+                        {buttonName || "Visit"}
+                    </a>
+                </div>
+            )}
+
         </article>
     );
 }

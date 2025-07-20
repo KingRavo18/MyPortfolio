@@ -9,11 +9,17 @@ function Footer(){
         <footer id="contact">
             <div className='contact'>
                 <h1>{t.contactTitle}</h1>
-                <p>{t.phone} +371 28 378 300</p>
-                <p>{t.email} raivokingovskis05@gmail.com</p>
-                <p>Github: <a href="https://github.com/KingRavo18">https://github.com/KingRavo18</a></p>
+                <p>{t.phone}</p>
+                <p>{t.email}</p>
+                <p>Github:{' '} 
+                    <a href="https://github.com/KingRavo18" target="_blank" rel="noopener noreferrer">
+                        github.com/KingRavo18
+                    </a>
+                </p>
             </div>
-            <p className='YearSign'>{new Date().getFullYear()} {t.finalSignature}</p>
+            <p className='YearSign'>
+                {new Date().getFullYear()} {t.finalSignature}
+            </p>
         </footer>
     );
 }

@@ -23,10 +23,11 @@ function Middle(){
     const t = translations.en.middle;
 
     return(
-        <main>
+        <main> 
             <PurpleCircles />
-            <div className="introSection">
 
+            {/* The section where my introduction and face are */}
+            <div className="introSection">
                 {/* The circle where my introduction will be written */}
                 <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
                     <h1 className="mt-[8%]">Raivo Kingovskis</h1>
@@ -35,9 +36,8 @@ function Middle(){
 
                 {/* Circle where the image of my face goes */}
                 <div className="veryBig backgroundFigures below left-[42%] top-[13%]">
-                    <img alt={t.imageAlt}></img>
+                    <img alt={t.imageAlt || "Image of Raivo Kingovskis"} />
                 </div>
-
             </div>
 
             {/* The section where my experiance and education are described */}

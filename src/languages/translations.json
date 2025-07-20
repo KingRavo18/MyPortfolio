@@ -10,7 +10,7 @@
       "bigIntro1": "Hello, I started programming for money but grew to enjoy it as well. So win, win! I studied it for four years and have gone through an internship too.",
       "bigIntro2": "My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well. In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.",
       "bigIntro3": "Read further for details!",
-      "imageAlt": "Picture of Raivo Kingovskis",
+      "imageAlt": "Image of Raivo Kingovskis",
       "educationTitle": "EDUCATION",
       "educationExplanation1": "Nothing",
       "experienceTitle": "EXPERIENCE",
@@ -28,8 +28,8 @@
     },
     "footer": {
       "contactTitle": "Contact",
-      "phone": "Phone:",
-      "email": "Email:",
+      "phone": "Phone:  +371 28 378 300",
+      "email": "Email:  raivokingovskis05@gmail.com",
       "finalSignature": "Raivo Kingovskis's Portfolio"
     }
   },
@@ -63,8 +63,8 @@
     },
     "footer": {
       "contactTitle": "Kontakts",
-      "phone": "Telefons:",
-      "email": "E-pasts:",
+      "phone": "Telefons: +371 28 378 300",
+      "email": "E-pasts:  raivokingovskis05@gmail.com",
       "finalSignature": "Raivo Kingovska Portfolio"
     }
   }

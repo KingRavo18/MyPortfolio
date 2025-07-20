@@ -7,7 +7,7 @@ import SandboxScreenshot from './assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from './assets/Magic_8-Ball_Screenshot.png'
 import translations from './languages/translations.json';
 
-function Middle(){
+export default function Middle(){
 
     //The function that activates the slider that appears or disappears when the purple button "EDUCATION" is clicked
     function popupEducation() {
@@ -91,5 +91,3 @@ function Middle(){
         </main>
     );
 }
-
-export default Middle

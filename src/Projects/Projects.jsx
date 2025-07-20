@@ -1,6 +1,6 @@
 import "./Projects.css"
 
-function Projects({image, alt, title, explanation, location, buttonName}) {
+export default function Projects({image, alt, title, explanation, location, buttonName}) {
 
     return(
         <article>
@@ -24,4 +24,3 @@ function Projects({image, alt, title, explanation, location, buttonName}) {
         </article>
     );
 }
-export default Projects

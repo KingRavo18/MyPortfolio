@@ -1,6 +1,6 @@
 import './Experience.css'
 
-function Experience({func, title, ID, desc1}) {
+export default function Experience({func, title, ID, desc1}) {
 
     return(
         <>
@@ -14,4 +14,3 @@ function Experience({func, title, ID, desc1}) {
         </>
     );
 }
-export default Experience

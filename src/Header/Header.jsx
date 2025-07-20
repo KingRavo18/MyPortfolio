@@ -1,7 +1,7 @@
 import './Header.css'
 import translations from '../languages/translations.json';
 
-function Header(){
+export default function Header(){
 
     const t = translations.en.header;
 
@@ -24,5 +24,3 @@ function Header(){
         </header>
     );
 }
-
-export default Header

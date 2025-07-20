@@ -3,7 +3,7 @@ import Middle from './Middle.jsx'
 import Footer from './Footer/Footer.jsx'
 import { useEffect } from 'react';
 
-function App() {
+export default function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,4 +18,3 @@ function App() {
   )
 }
 
-export default App

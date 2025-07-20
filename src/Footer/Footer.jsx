@@ -1,7 +1,7 @@
 import './Footer.css'
 import translations from '../languages/translations.json';
 
-function Footer(){
+export default function Footer(){
 
     const t = translations.en.footer;
 
@@ -23,5 +23,3 @@ function Footer(){
         </footer>
     );
 }
-
-export default Footer

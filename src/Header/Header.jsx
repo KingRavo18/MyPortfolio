@@ -1,5 +1,5 @@
 import './Header.css'
-import translations from '../Languages/translations.json';
+import translations from '../languages/translations.json';
 
 function Header(){
 

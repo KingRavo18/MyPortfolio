@@ -35,7 +35,7 @@ function Middle(){
 
                 {/* Circle where the image of my face goes */}
                 <div className="veryBig backgroundFigures below left-[42%] top-[13%]">
-                    <img src="" alt={t.imageAlt}></img>
+                    <img alt={t.imageAlt}></img>
                 </div>
 
             </div>

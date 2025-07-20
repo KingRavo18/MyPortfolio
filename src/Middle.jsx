@@ -18,7 +18,7 @@ function popupExperience() {
     popup2.style.display === "block" ? popup2.style.display = "none" : popup2.style.display = "block";
 }
 
-    const t = translations.middle;
+    const t = translations.en.middle;
 
     return(
         <main>

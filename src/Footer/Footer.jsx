@@ -3,7 +3,7 @@ import translations from '../languages/translations.json';
 
 function Footer(){
 
-    const t = translations.footer;
+    const t = translations.en.footer;
 
     return(
         <footer id="contact">

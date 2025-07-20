@@ -3,7 +3,7 @@ import translations from '../languages/translations.json';
 
 function Header(){
 
-    const t = translations.header;
+    const t = translations.en.header;
 
     return(
         <header>

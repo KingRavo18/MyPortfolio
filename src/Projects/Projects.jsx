@@ -8,10 +8,14 @@ export default function Projects({image, alt, title, explanation, location, butt
                 <img src={image} alt={alt || "Project image"} loading="lazy" />
             </div>
 
-            <h2>{title || "Project title"}</h2>
+            <h2>
+                {title || "Project title"}
+            </h2>
 
             <div className="explenationContainer">
-                <p>{explanation || "Very good website"}</p>
+                <p>
+                    {explanation || "Very good website"}
+                </p>
             </div>
 
             {location && (

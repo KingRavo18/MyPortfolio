@@ -30,8 +30,16 @@ export default function Middle(){
             <div className="introSection">
                 {/* The circle where my introduction will be written */}
                 <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
-                    <h1 className="mt-[8%]">Raivo Kingovskis</h1>
-                    <p>{t.bigIntro1}<br/>{t.bigIntro2}<br/>{t.bigIntro3}</p>
+                    <h1 className="mt-[8%]">
+                        Raivo Kingovskis
+                    </h1>
+                    <p>
+                        {t.bigIntro1}
+                        <br/>
+                        {t.bigIntro2}
+                        <br/>
+                        {t.bigIntro3}
+                    </p>
                 </div>
 
                 {/* Circle where the image of my face goes */}
@@ -41,7 +49,7 @@ export default function Middle(){
             </div>
 
             {/* The section where my experiance and education are described */}
-            <div className='experianceSection'>
+            <div className="experianceSection">
                 <Experience func={popupEducation} 
                             ID="Education_Popup" 
                             title={t.educationTitle} 
@@ -55,9 +63,11 @@ export default function Middle(){
             </div>
 
             {/* My Projects */}
-            <h1 id="projects">{t.projectsTitle}</h1>
+            <h1 id="projects">
+                {t.projectsTitle}
+            </h1>
 
-            <div className='projectSection'>
+            <div className="projectSection">
                 <Projects title="Sandbox" 
                           explanation={t.project1Explanation} 
                           image={SandboxScreenshot} 

@@ -2,63 +2,70 @@ article {
     height: 350px;
     width: 25%;
     background-color: rgb(39, 38, 38);
-    border: 1px solid rgb(122, 45, 194);
+    border: 2px solid rgb(122, 45, 194);
     border-radius: 20px;
     transition: 0.5s;
     z-index: 55;
-    color: white;
-    
 }
-
 article p {
     color: rgb(199, 199, 199);
 }
-
 article:hover {
-    border: 1px solid rgb(153, 89, 212);
+    border: 2px solid rgb(153, 89, 212);
     margin-top: -10px;
     margin-bottom: 10px;
 }
-
 article h2 {
-    margin-top: 5px;
     text-align: center;
-    font-size: 120%;
+    font-size: 130%;
+    color: white;
 }
-
 .imageContainer {
-    height: 150px;
+    height: 43.2%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    overflow: hidden;
 }
-
 .imageContainer img{
     height: 150px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
 }
-
 .explenationContainer {
     margin: 5px;
     height: 100px;
 }
-
 .linkContainer {
     display: flex;
     justify-content: center;
     height: auto;
     width: 100%;
 }
-
 .linkContainer a{
-    padding: 10px 20px;
+    padding: 8px 28px;
     background-color: rgb(122, 45, 194);
     cursor: pointer;
     transition: 0.5s;
+    font-weight: bold;
+    font-size: 120%;
+    color: white;
 }
-
 .linkContainer a:hover{
-    padding: 12px 24px;
+    padding: 10px 30px;
     background-color: rgb(102, 48, 153);
     color: rgb(172, 172, 172);
+}
+@media only screen and (min-width: 1800px) {
+    article {
+        height: 375px;
+    }
+    .imageContainer {
+        height: 175px;
+    }
+    .imageContainer img{
+        height: 200px;
+    }
 }

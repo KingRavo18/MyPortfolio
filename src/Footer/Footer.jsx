@@ -8,10 +8,17 @@ export default function Footer(){
     return(
         <footer id="contact">
             <div className='contact'>
-                <h1>{t.contactTitle}</h1>
-                <p>{t.phone}</p>
-                <p>{t.email}</p>
-                <p>Github:{' '} 
+                <h1>
+                    {t.contactTitle}
+                </h1>
+                <p>
+                    {t.phone}
+                </p>
+                <p>
+                    {t.email}
+                </p>
+                <p>
+                    Github:{' '} 
                     <a href="https://github.com/KingRavo18" target="_blank" rel="noopener noreferrer">
                         github.com/KingRavo18
                     </a>

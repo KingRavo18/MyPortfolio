@@ -177,4 +177,16 @@ main {
     width: 100%;
     height: 1000px;
   }
+  .big {
+    height: 50.5%;
+  }
+  .medium {
+    height: 17%;
+  }
+  .small {
+    height: 10%;
+  }
+  .verySmall {
+    height: 5%;
+  }
 }

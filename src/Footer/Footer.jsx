@@ -1,5 +1,5 @@
 import './Footer.css'
-import translations from '../languages/translations.json';
+import translations from '../languages/translations.json'
 
 export default function Footer(){
 

@@ -1,4 +1,4 @@
-.experianceSection article {
+.experienceSection article {
     background-color: rgb(122, 45, 194);
     border-radius: 20px;
     width: 60%;
@@ -12,7 +12,7 @@
     transition: 0.5s;
 }
 
-.experianceSection article:hover {
+.experienceSection article:hover {
     background-color: rgb(39, 38, 38);
     border: 1px solid rgb(122, 45, 194);
     font-size: 120%;

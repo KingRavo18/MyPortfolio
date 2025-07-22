@@ -10,7 +10,7 @@ function PurpleCircles () {
             <div className="slidingLeftAnimation big backgroundFigures below top-[78%] left-[0.8%]"/>
             <div className="slidingLeftAnimationDelay verySmall backgroundFigures below top-[79%] left-[0.8%]"/>
             <div className="slidingLeftAnimationDelay small backgroundFigures below top-[98%] left-[29%]"/>
-            <div id="experiance" className="verySmall backgroundFigures below top-[107%] left-[40.2%]"/>
+            <div id="experience" className="verySmall backgroundFigures below top-[107%] left-[40.2%]"/>
             <div className="medium backgroundFigures top-[950px] left-[-10px]"/>
             <div className="medium backgroundFigures top-[900px] right-[40px]"/>
             <div className="verySmall backgroundFigures top-[850px] left-[180px]"/>

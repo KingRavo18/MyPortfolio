@@ -1,5 +1,5 @@
 import Projects from './Projects/Projects.jsx'
-import Experience from './ExperianceEducation/Experience.jsx'
+import Experience from './ExperienceEducation/Experience.jsx'
 import PurpleCircles from './assets/PurpleCircles.jsx'
 import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
 import SEO_Screenshot from './assets/SEO_screenshot.png'
@@ -48,8 +48,8 @@ export default function Middle(){
                 </div>
             </div>
 
-            {/* The section where my experiance and education are described */}
-            <div className="experianceSection">
+            {/* The section where my experience and education are described */}
+            <div className="experienceSection">
                 <Experience func={popupEducation} 
                             ID="Education_Popup" 
                             title={t.educationTitle} 

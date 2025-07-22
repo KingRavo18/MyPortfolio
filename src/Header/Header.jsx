@@ -3,54 +3,35 @@ import translations from '../languages/translations.json'
 
 export default function Header(){
 
-    const t = translations.en.header;
+    const { contact, projects, experience, introduction } = translations.en.header;
+    const navItems = [
+        {href: "#contact", label: contact},
+        {href: "#projects", label: projects},
+        {href: "#experience", label: experience},
+        {href: "#introduction", label: introduction},
+    ]
 
     return(
         <header>
             <nav className="float-left">
                 <ul>
                     <li>
-                        <button className="text-[150%]">
-                            LV
-                        </button>
+                        <button className="text-[150%]">LV</button>
                     </li>
                     <li>
-                        <button className="text-[150%]">
-                            EN
-                        </button>
+                        <button className="text-[150%]">EN</button>
                     </li>
                 </ul>
             </nav>
             <nav className="Navigation ml-[60%]">
                 <ul>
-                    <li>
-                        <a href="#contact">
-                            <button>
-                                {t.contact}
-                            </button>
+                    {navItems.map(({ href, label }) => (
+                    <li key={href}>
+                        <a href={href}>
+                            <button>{label}</button>
                         </a>
                     </li>
-                    <li>
-                        <a href="#projects">
-                            <button>
-                                {t.projects}
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experiance">
-                            <button>
-                                {t.experience}
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#introduction">
-                            <button>
-                                {t.introduction}
-                            </button>
-                        </a>
-                    </li>
+                    ))}
                 </ul>
             </nav>
         </header>

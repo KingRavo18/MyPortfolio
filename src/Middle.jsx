@@ -9,18 +9,14 @@ import translations from './languages/translations.json'
 
 export default function Middle(){
 
-    //The function that activates the slider that appears or disappears when the purple button "EDUCATION" is clicked
-    function popupEducation() {
-        const popup = document.getElementById("Education_Popup");
-        popup.style.display === "block" ? popup.style.display = "none" : popup.style.display = "block";
-    }
-    //The function that activates the slider that appears or disappears when the purple button "EXPERIENCE" is clicked
-    function popupExperience() {
-        const popup2 = document.getElementById("Experience_Popup");
-        popup2.style.display === "block" ? popup2.style.display = "none" : popup2.style.display = "block";
-    }
-
     const t = translations.en.middle;
+
+    const togglePopup = (id) => {
+        const popup = document.getElementById(id);
+        if(popup) {
+            popup.style.display = popup.style.display === "block" ? "none" : "block";
+        }
+    }
 
     return(
         <main> 
@@ -30,9 +26,7 @@ export default function Middle(){
             <div className="introSection">
                 {/* The circle where my introduction will be written */}
                 <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
-                    <h1 className="mt-[8%]">
-                        Raivo Kingovskis
-                    </h1>
+                    <h1 className="mt-[8%]">Raivo Kingovskis</h1>
                     <p>
                         {t.bigIntro1}
                         <br/>
@@ -50,12 +44,12 @@ export default function Middle(){
 
             {/* The section where my experience and education are described */}
             <div className="experienceSection">
-                <Experience func={popupEducation} 
+                <Experience func={() => togglePopup("Education_Popup")} 
                             ID="Education_Popup" 
                             title={t.educationTitle} 
                             desc1={t.educationExplanation1}
                 />
-                <Experience func={popupExperience} 
+                <Experience func={() => togglePopup("Experience_Popup")} 
                             ID="Experience_Popup" 
                             title={t.experienceTitle} 
                             desc1={t.experienceExplanation1}
@@ -63,9 +57,7 @@ export default function Middle(){
             </div>
 
             {/* My Projects */}
-            <h1 id="projects">
-                {t.projectsTitle}
-            </h1>
+            <h1 id="projects">{t.projectsTitle}</h1>
 
             <div className="projectSection">
                 <Projects title="Sandbox" 

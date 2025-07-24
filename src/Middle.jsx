@@ -11,6 +11,7 @@ export default function Middle(){
 
     const t = translations.en.middle;
 
+    //the function that makes the popup appear below either the Experience of Education button's
     const togglePopup = (id) => {
         const popup = document.getElementById(id);
         if(popup) {

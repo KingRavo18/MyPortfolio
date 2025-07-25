@@ -1,9 +1,10 @@
 import './Footer.css'
-import translations from '../languages/translations.json'
+import { useLanguage } from '../App.jsx'
 
 export default function Footer(){
 
-    const { contactTitle, phone, email, finalSignature } = translations.en.footer;
+    const { t } = useLanguage();
+    const { contactTitle, phone, email, finalSignature } = t.footer;
     const githubUrl = "https://github.com/KingRavo18";                                        
 
     return(

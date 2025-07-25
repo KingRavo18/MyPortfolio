@@ -1,9 +1,11 @@
 import './Header.css'
-import translations from '../languages/translations.json'
+import { useLanguage } from '../App.jsx'
 
 export default function Header(){
 
-    const { contact, projects, experience, introduction } = translations.en.header;
+    const { t, setLanguage } = useLanguage();
+    const { contact, projects, experience, introduction } = t.header;
+    
     const navItems = [
         {href: "#contact", label: contact},
         {href: "#projects", label: projects},
@@ -16,10 +18,10 @@ export default function Header(){
             <nav className="float-left">
                 <ul>
                     <li>
-                        <button className="text-[150%]">LV</button>
+                        <button className="text-[150%]" onClick={() => setLanguage('lv')}>LV</button>
                     </li>
                     <li>
-                        <button className="text-[150%]">EN</button>
+                        <button className="text-[150%]" onClick={() => setLanguage('en')}>EN</button>
                     </li>
                 </ul>
             </nav>

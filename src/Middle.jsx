@@ -39,6 +39,12 @@ export default function Middle(){
         }
     }
 
+    //the array which contains data for the experiance popups
+    const experiancePopup = [
+        {id: "Education_Popup", title: educationTitle, desc1: educationExplanation1},
+        {id: "Experience_Popup", title: experienceTitle, desc1: experienceExplanation1},
+    ]
+
     return(
         <main> 
             <PurpleCircles />
@@ -65,16 +71,15 @@ export default function Middle(){
 
             {/* The section where my experience and education are described */}
             <div className="experienceSection">
-                <Experience func={() => togglePopup("Education_Popup")} 
-                            ID="Education_Popup" 
-                            title={educationTitle} 
-                            desc1={educationExplanation1}
-                />
-                <Experience func={() => togglePopup("Experience_Popup")} 
-                            ID="Experience_Popup" 
-                            title={experienceTitle} 
-                            desc1={experienceExplanation1}
-                />
+                {experiancePopup.map(({ id, title, desc1 }) => (
+                    <Experience 
+                                key={id}
+                                func={() => togglePopup(id)} 
+                                ID={id} 
+                                title={title} 
+                                desc1={desc1}
+                    />
+                ))}
             </div>
 
             {/* My Projects */}

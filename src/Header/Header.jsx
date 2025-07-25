@@ -1,5 +1,7 @@
 import './Header.css'
 import { useLanguage } from '../App.jsx'
+import lv_translations from '../languages/lv_translations.json'
+import en_translations from '../languages/en_translations.json'
 
 export default function Header(){
 
@@ -18,10 +20,10 @@ export default function Header(){
             <nav className="float-left">
                 <ul>
                     <li>
-                        <button className="text-[150%]" onClick={() => setLanguage('en')}>EN</button>
+                        <button className="text-[150%]" onClick={() => setLanguage(en_translations)}>EN</button>
                     </li>
                     <li>
-                        <button className="text-[150%]" onClick={() => setLanguage('lv')}>LV</button>
+                        <button className="text-[150%]" onClick={() => setLanguage(lv_translations)}>LV</button>
                     </li>
                 </ul>
             </nav>

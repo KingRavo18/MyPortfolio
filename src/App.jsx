@@ -2,7 +2,7 @@ import { useState, useContext, createContext, useEffect } from 'react'
 import Header from './Header/Header.jsx'
 import Middle from './Middle.jsx'
 import Footer from './Footer/Footer.jsx'
-import translations from './languages/translations.json'
+import lv_translations from './languages/lv_translations.json'
 
 const LanguageContext = createContext();
 
@@ -12,8 +12,8 @@ export function useLanguage() {
 
 export default function App() {
 
-  const [language, setLanguage] = useState('lv');
-  const t = translations[language];
+  const [language, setLanguage] = useState(lv_translations);
+  const t = language;
 
   // Scroll to top on load
   useEffect(() => {

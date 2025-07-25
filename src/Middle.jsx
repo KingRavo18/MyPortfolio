@@ -45,6 +45,42 @@ export default function Middle(){
         {id: "Experience_Popup", title: experienceTitle, desc1: experienceExplanation1},
     ]
 
+    //the array which contains data for my projects
+    const projectsData = [
+        {
+         title: "Sandbox", 
+         desc: project1Explanation, 
+         image: SandboxScreenshot, 
+         alt: project1Alt, 
+         location: "https://smuka-lapa.vercel.app/", 
+         button: buttonName
+        },
+        {
+         title: "Disciplinators", 
+         desc: project2Explanation, 
+         image: DisciplinatorsScreenshot, 
+         alt: project2Alt, 
+         location: "https://disciplinators.kesug.com/", 
+         button: buttonName
+        },
+        {
+         title: "SEO", 
+         desc: project3Explanation, 
+         image: SEO_Screenshot, 
+         alt: project3Alt, 
+         location: "https://seo-vtdt-project.vercel.app/", 
+         button: buttonName
+        },
+        {
+         title: "Magic 8-Ball", 
+         desc: project4Explanation, 
+         image: Magic8BallScreenshot, 
+         alt: project4Alt, 
+         location: "https://magic-8-ball-seven.vercel.app/", 
+         button: buttonName
+        },
+    ]
+
     return(
         <main> 
             <PurpleCircles />
@@ -73,11 +109,11 @@ export default function Middle(){
             <div className="experienceSection">
                 {experiancePopup.map(({ id, title, desc1 }) => (
                     <Experience 
-                                key={id}
-                                func={() => togglePopup(id)} 
-                                ID={id} 
-                                title={title} 
-                                desc1={desc1}
+                            key={id}
+                            func={() => togglePopup(id)} 
+                            ID={id} 
+                            title={title} 
+                            desc1={desc1}
                     />
                 ))}
             </div>
@@ -86,34 +122,17 @@ export default function Middle(){
             <h1 id="projects">{projectsTitle}</h1>
 
             <div className="projectSection">
-                <Projects title="Sandbox" 
-                          explanation={project1Explanation} 
-                          image={SandboxScreenshot} 
-                          alt={project1Alt} 
-                          location="https://smuka-lapa.vercel.app/" 
-                          buttonName={buttonName}
+                {projectsData.map(({ title, desc, image, alt, location, button }) => (
+                <Projects 
+                        key={title}
+                        title={title} 
+                        explanation={desc} 
+                        image={image} 
+                        alt={alt} 
+                        location={location} 
+                        buttonName={button}
                 />
-                <Projects title="Disciplinators" 
-                          explanation={project2Explanation} 
-                          image={DisciplinatorsScreenshot} 
-                          alt={project2Alt} 
-                          location="https://disciplinators.kesug.com/" 
-                          buttonName={buttonName}
-                />
-                <Projects title="SEO" 
-                          explanation={project3Explanation} 
-                          image={SEO_Screenshot} 
-                          alt={project3Alt} 
-                          location="https://seo-vtdt-project.vercel.app/" 
-                          buttonName={buttonName}
-                />
-                <Projects title="Magic 8-Ball" 
-                          explanation={project4Explanation} 
-                          image={Magic8BallScreenshot} 
-                          alt={project4Alt} 
-                          location="https://magic-8-ball-seven.vercel.app/" 
-                          buttonName={buttonName}
-                />
+                ))}
             </div>
             
         </main>

@@ -1,0 +1,36 @@
+{
+   "lv":{
+    "header": {
+      "contact": "Kontakts",
+      "projects": "Projekti",
+      "experience": "Pieredze un Izglītība",
+      "introduction": "Iepazīšanās"
+    },
+    "middle": {
+      "bigIntro1": "Hello, I started programming for money but grew to enjoy it as well. So win, win! I studied it for four years and have gone through an internship too.",
+      "bigIntro2": "My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well. In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.",
+      "bigIntro3": "Read further for details!",
+      "imageAlt": "Raivo Kingovska Attēls",
+      "educationTitle": "IZGLĪTĪBA",
+      "educationExplanation1": "Nekas",
+      "experienceTitle": "PIEREDZE",
+      "experienceExplanation1": "Nekas",
+      "projectsTitle": "PROJEKTI",
+      "project1Explanation": "Nekas",
+      "project2Explanation": "Nekas",
+      "project3Explanation": "Nekas",
+      "project4Explanation": "Made for fun with javascript and simple css. A true, undisputable masterpiece.",
+      "project1Alt": "Sandbox Design Tīmekļa Vietne",
+      "project2Alt": "Disciplinators Tīmekļa Vietne",
+      "project3Alt": "SEO Tīmekļa Vietne",
+      "project4Alt": "Magic 8-Ball Tīmekļa Vietne",
+      "buttonName": "Doties Uz"
+    },
+    "footer": {
+      "contactTitle": "Kontakts",
+      "phone": "Telefons: +371 28 378 300",
+      "email": "E-pasts:  raivokingovskis05@gmail.com",
+      "finalSignature": "Raivo Kingovska Portfolio"
+    }
+  }
+}

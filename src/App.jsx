@@ -12,7 +12,7 @@ export function useLanguage() {
 
 export default function App() {
 
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('lv');
   const t = translations[language];
 
   // Scroll to top on load

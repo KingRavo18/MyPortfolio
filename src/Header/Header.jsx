@@ -5,7 +5,7 @@ export default function Header(){
 
     const { t, setLanguage } = useLanguage();
     const { contact, projects, experience, introduction } = t.header;
-    
+
     const navItems = [
         {href: "#contact", label: contact},
         {href: "#projects", label: projects},
@@ -18,10 +18,10 @@ export default function Header(){
             <nav className="float-left">
                 <ul>
                     <li>
-                        <button className="text-[150%]" onClick={() => setLanguage('lv')}>LV</button>
+                        <button className="text-[150%]" onClick={() => setLanguage('en')}>EN</button>
                     </li>
                     <li>
-                        <button className="text-[150%]" onClick={() => setLanguage('en')}>EN</button>
+                        <button className="text-[150%]" onClick={() => setLanguage('lv')}>LV</button>
                     </li>
                 </ul>
             </nav>

@@ -84,7 +84,6 @@ export default function Middle(){
 
     return(
         <main> 
-            <PurpleCircles />
 
             {/* The section where my introduction and face are */}
             <div className="introSection">

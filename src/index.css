@@ -147,11 +147,16 @@ main {
   width: 2.3vw;
 }
 
+#projects {
+  font-size: 5vw;
+  margin: 1.8vw;
+}
+
 .projectSection {
   display: flex;
   justify-content: center;
   height: auto;
-  margin: 1vw 0 5vw 0;
+  margin: 1vw 0 9vw 0;
   width: 100%;
   gap: 4vw;
   flex-wrap: wrap;

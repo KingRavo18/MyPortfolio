@@ -5,7 +5,7 @@ import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
 import SEO_Screenshot from './assets/SEO_screenshot.png'
 import SandboxScreenshot from './assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from './assets/Magic_8-Ball_Screenshot.png'
-import AuthorFace from './assets/authorFace.jpg'
+import AuthorsFace from './assets/Authors_Face.png'
 import { useLanguage } from './App.jsx'
 
 export default function Middle(){
@@ -102,7 +102,7 @@ export default function Middle(){
 
                 {/* Circle where the image of my face goes */}
                 <div className="veryBig backgroundFigures below left-[42%] top-[13%]">
-                    <img alt={imageAlt || "Image of Raivo Kingovskis"} />
+                    <img className="faceImage" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
                 </div>
             </div>
 

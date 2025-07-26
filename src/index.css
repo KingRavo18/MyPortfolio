@@ -5,28 +5,28 @@ html {
 }
 
 body {
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  background-color: rgb(39, 38, 38);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Calibri, Arial, Helvetica, sans-serif;
-  background-color: rgb(39, 38, 38);
 }
 
 h1 {
-  text-align: center;
   color: white;
-  font-size: 200%;
-  padding: 1.6%;
+  font-size: 2.5vw;
+  padding: 0.6vw;
   z-index: 2;
+  text-align: center;
 }
 
 main {
-  padding-top: 4%;
+  padding-top: 4vw;
 }
 
 .introSection {
   width: 100%;
-  height: 700px;
+  height: 54vw;
 }
 
 .backgroundFigures {
@@ -82,16 +82,17 @@ main {
 
 .backgroundTextArea {
   background-color: rgb(39, 38, 38);
-  border: 1px solid rgb(122, 45, 194);
-  width: 31%;
-  height: 70%;
+  border: 2px solid rgb(122, 45, 194);
+  width: 30.6vw;
+  height: 30.6vw;
   z-index: 2;
 }
 
 .backgroundTextArea p{
   color: rgb(199, 199, 199);
-  text-align: center;
   margin: 2% 5% 5% 5%;
+  font-size: 1.25vw; 
+  text-align: center;
 }
 
 .slideInFromBottom {
@@ -114,28 +115,36 @@ main {
 
 .veryBig {
   background-color: rgb(199, 199, 199);
-  height: 87%;
-  width: 38.5%;
+  height: 37.4vw;
+  width: 37.4vw;
+  overflow: hidden;
+}
+
+.faceImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
 }
 
 .big {
-  height: 54.5%;
-  width: 23.7%;
+  height: 23.6vw;
+  width: 23.6vw;
 }
 
 .medium {
-  height: 18%;
-  width: 8%;
+  height: 7.8vw;
+  width: 7.8vw;
 }
 
 .small {
-  height: 11%;
-  width: 4.8%;
+  height: 4.6vw;
+  width: 4.6vw;
 }
 
 .verySmall {
-  height: 5.4%;
-  width: 2.4%;
+  height: 2.3vw;
+  width: 2.3vw;
 }
 
 .projectSection {
@@ -160,33 +169,14 @@ main {
 /* For larger screens */
 
 @media only screen and (min-width: 1800px) {
-  .veryBig {
-    height: 81%;
-  } 
-  .backgroundTextArea {
-    height: 64%;
-  }
   .backgroundTextArea p{
-    font-size: 152%;
     margin: 5% 6% 6% 6%;
-  }
-  h1 {
-    font-size: 250%;
   }
   .introSection {
     width: 100%;
-    height: 1000px;
+    height: 1100px;
   }
-  .big {
-    height: 50.5%;
-  }
-  .medium {
-    height: 17%;
-  }
-  .small {
-    height: 10%;
-  }
-  .verySmall {
-    height: 5%;
+  .projectSection {
+    gap: 70px;
   }
 }

@@ -1,38 +1,36 @@
 .experienceSection article {
     background-color: rgb(122, 45, 194);
     border-radius: 20px;
-    width: 60%;
+    width: 60vw;
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    margin: 10px 10px 0 10px;
+    height: 7vw;
+    margin: 1vw 1vw 0 1vw;
     z-index: 55;
     transition: 0.5s;
 }
 
 .experienceSection article:hover {
     background-color: rgb(39, 38, 38);
-    border: 1px solid rgb(122, 45, 194);
-    font-size: 120%;
+    border: 2px solid rgb(122, 45, 194);
 }
 
 .experienceSection article:active {
     background-color: black;
-    border: 1px solid rgb(126, 15, 230);
-    font-size: 130%;
+    border: 2px solid rgb(126, 15, 230);
 }
 
 .slidedown {
     display: none;
     z-index: 2;
-    width: 60%;
+    width: 60vw;
     height: auto;
-    margin-top: -20px;
-    padding: 20px;
+    margin-top: -1.6vw;
+    padding: 1.8vw;
     background-color: rgb(39, 38, 38);
-    border: 1px solid rgb(122, 45, 194);
+    border: 2px solid rgb(122, 45, 194);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -40,4 +38,5 @@
 .slidedown p{
     text-align: left;
     color: rgb(199, 199, 199);
+    font-size: 1.4vw;
 }

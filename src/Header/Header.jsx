@@ -15,16 +15,20 @@ export default function Header(){
         {href: "#introduction", label: introduction},
     ]
 
+    const translationButtons = [
+        {language: en_translations, title: "EN"},
+        {language: lv_translations, title: "LV"},
+    ]
+
     return(
         <header>
             <nav>
                 <ul>
-                    <li>
-                        <button className="text-[150%]" onClick={() => setLanguage(en_translations)}>EN</button>
+                    {translationButtons.map(({ language, title }) => (
+                    <li key={title}>
+                        <button className="text-[150%]" onClick={() => setLanguage(language)}>{title}</button>
                     </li>
-                    <li>
-                        <button className="text-[150%]" onClick={() => setLanguage(lv_translations)}>LV</button>
-                    </li>
+                    ))}
                 </ul>
             </nav>
             <nav className="Navigation">

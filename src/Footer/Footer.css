@@ -3,7 +3,7 @@ footer {
   bottom: 0;
   margin-bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 16vw;
   background-color: rgb(36, 35, 35);
   border-top: 1px solid rgb(122, 45, 194);
 }
@@ -11,20 +11,26 @@ footer {
 .YearSign {
   text-align: center;
   color: rgb(199, 199, 199);
+  font-size: 1.1vw;
 }
 
 .contact {
   height: 80%;
-  width: 400px;
-  padding: 10px;
+  width: 26vw;
+  padding: 1vw;
   color: rgb(199, 199, 199);
 }
 
 .contact h1{
+  font-size: 2.5vw;
   text-align: left;
   margin: 0;
   padding: 0;
   color: white;
+}
+
+.contact p{
+  font-size: 1.1vw;
 }
 
 .contact a{

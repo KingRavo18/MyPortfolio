@@ -5,6 +5,7 @@ import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
 import SEO_Screenshot from './assets/SEO_screenshot.png'
 import SandboxScreenshot from './assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from './assets/Magic_8-Ball_Screenshot.png'
+import AuthorFace from './assets/authorFace.jpg'
 import { useLanguage } from './App.jsx'
 
 export default function Middle(){

@@ -18,6 +18,12 @@
     font-size: 120%;
 }
 
+.experienceSection article:active {
+    background-color: black;
+    border: 1px solid rgb(126, 15, 230);
+    font-size: 130%;
+}
+
 .slidedown {
     display: none;
     z-index: 2;

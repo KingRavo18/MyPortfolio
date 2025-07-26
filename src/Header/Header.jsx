@@ -17,7 +17,7 @@ export default function Header(){
 
     return(
         <header>
-            <nav className="float-left">
+            <nav>
                 <ul>
                     <li>
                         <button className="text-[150%]" onClick={() => setLanguage(en_translations)}>EN</button>
@@ -27,7 +27,7 @@ export default function Header(){
                     </li>
                 </ul>
             </nav>
-            <nav className="Navigation ml-[60%]">
+            <nav className="Navigation">
                 <ul>
                     {navItems.map(({ href, label }) => (
                     <li key={href}>

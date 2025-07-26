@@ -3,8 +3,8 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
-  margin-left: 0;
-  padding-left: 1.65%;
+  justify-content: space-between;
+  padding: 0 1.65% 0 1.65%;
   width: 100%;
   height: 10%;
   background-color: rgb(36, 35, 35);
@@ -13,7 +13,6 @@ header {
 
 ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -36,8 +35,18 @@ button:hover {
   font-size: 155%;
 }
 
+button:active {
+  color: rgb(152, 79, 219);
+  background-color: rgb(88, 87, 87);
+  font-size: 160%;
+}
+
 .Navigation button:hover {
   font-size: 105%;
+}
+
+.Navigation button:active {
+  font-size: 110%;
 }
 
 @media only screen and (min-width: 1800px) {

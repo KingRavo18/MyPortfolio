@@ -41,15 +41,6 @@ export default function Middle(){
         setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
     }
 
-    /*
-    if (prevOpenPopupId === id) {
-      return null; // If the clicked popup is already open, close it
-    } else {
-      return id;   // Otherwise, open the new popup
-    }
-    */
-
-
     //the array which contains data for the experiance popups
     const experiancePopup = [
         {id: "Education_Popup", title: educationTitle, desc1: educationExplanation1},

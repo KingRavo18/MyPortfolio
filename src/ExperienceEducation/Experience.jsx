@@ -1,6 +1,6 @@
 import './Experience.css'
 
-export default function Experience({func, title, ID, desc1}) {
+export default function Experience({func, title, ID, desc1, isOpen}) {
 
     return(
         <>
@@ -8,9 +8,11 @@ export default function Experience({func, title, ID, desc1}) {
                 <h1>{title || "Untitled"}</h1>
             </article>
 
+        {isOpen && (
             <div id={ID} className='slidedown'>
                 <p>{desc1 || "No description available"}</p>
             </div>
+        )}
         </>
     );
 }

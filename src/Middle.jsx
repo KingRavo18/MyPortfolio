@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import Projects from './Projects/Projects.jsx'
 import Experience from './ExperienceEducation/Experience.jsx'
 import PurpleCircles from './assets/PurpleCircles.jsx'
@@ -32,13 +33,22 @@ export default function Middle(){
             project4Alt
           } = t.middle;
 
-    //the function that makes the popup appear below either the Experience of Education button's
+
+    const [openPopupId, setOpenPopupId] = useState(null);
+
+    //this toggles the experiances and education popups open and closed
     const togglePopup = (id) => {
-        const popup = document.getElementById(id);
-        if(popup) {
-            popup.style.display = popup.style.display === "block" ? "none" : "block";
-        }
+        setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
     }
+
+    /*
+    if (prevOpenPopupId === id) {
+      return null; // If the clicked popup is already open, close it
+    } else {
+      return id;   // Otherwise, open the new popup
+    }
+    */
+
 
     //the array which contains data for the experiance popups
     const experiancePopup = [
@@ -114,6 +124,7 @@ export default function Middle(){
                             ID={id} 
                             title={title} 
                             desc1={desc1}
+                            isOpen={openPopupId === id}
                     />
                 ))}
             </div>

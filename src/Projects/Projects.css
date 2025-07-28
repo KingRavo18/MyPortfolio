@@ -7,34 +7,38 @@ article {
     transition: 0.5s;
     z-index: 55;
 }
-article p {
-    color: rgb(199, 199, 199);
-}
 article:hover {
     border: 2px solid rgb(153, 89, 212);
     margin: -1.5vw 0 1.5vw 0;
 }
+
+article p {
+    color: rgb(199, 199, 199);
+}
+
 article h2 {
     text-align: center;
     font-size: 2vw;
     color: white;
 }
+
 .imageContainer {
     height: 17vw;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     overflow: hidden;
 }
-.imageContainer img{
+
+.imageContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;     
     display: block;
 }
+
 .explenationContainer {
     margin: 0.7vw;
     height: 7vw;
-    
 }
 .explenationContainer p {
     font-size: 1.4vw;
@@ -46,6 +50,7 @@ article h2 {
     height: auto;
     width: 100%;
 }
+
 .linkContainer a{
     padding: 0.7vw 2.2vw;
     background-color: rgb(122, 45, 194);

@@ -1,11 +1,11 @@
 import "./Projects.css"
 
-export default function Projects({image, alt, title, explanation, location, buttonName}) {
+export default function Projects({image, alt, title, explanation, location, buttonName}){
 
     return(
         <article>
             <div className="imageContainer">
-                <img src={image} alt={alt || "Project image"} loading="lazy" />
+                <img src={image} alt={alt || "Project image"} loading="lazy"/>
             </div>
 
             <h2>{title || "Project title"}</h2>

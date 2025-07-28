@@ -1,5 +1,5 @@
 import './Header.css'
-import { useLanguage } from '../App.jsx'
+import {useLanguage} from '../App.jsx'
 import lv_translations from '../languages/lv_translations.json'
 import en_translations from '../languages/en_translations.json'
 
@@ -22,16 +22,16 @@ export default function Header(){
 
     return(
         <header>
-            <nav>
+            <nav className='language'>
                 <ul>
                     {translationButtons.map(({ language, title }) => (
                     <li key={title}>
-                        <button className="text-[150%]" onClick={() => setLanguage(language)}>{title}</button>
+                        <button onClick={() => setLanguage(language)}>{title}</button>
                     </li>
                     ))}
                 </ul>
             </nav>
-            <nav className="Navigation">
+            <nav className="navigation">
                 <ul>
                     {navItems.map(({ href, label }) => (
                     <li key={href}>

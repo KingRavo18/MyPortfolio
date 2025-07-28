@@ -1,5 +1,5 @@
 import './Footer.css'
-import { useLanguage } from '../App.jsx'
+import {useLanguage} from '../App.jsx'
 
 export default function Footer(){
 
@@ -14,12 +14,12 @@ export default function Footer(){
                 <p>{phone}</p>
                 <p>{email}</p>
                 <p>Github:{' '} 
-                    <a href={githubUrl}  target="_blank" rel="noopener noreferrer">
+                    <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                         github.com/KingRavo18
                     </a>
                 </p>
             </div>
-            <p className='YearSign'>{new Date().getFullYear()} {finalSignature}</p>
+            <p className='yearSign'>{new Date().getFullYear()} {finalSignature}</p>
         </footer>
     );
 }

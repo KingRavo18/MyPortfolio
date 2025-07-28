@@ -11,14 +11,12 @@
     z-index: 55;
     transition: 0.5s;
 }
-
 .experienceSection article:hover {
     background-color: rgb(39, 38, 38);
     border: 2px solid rgb(122, 45, 194);
 }
-
 .experienceSection article:active {
-    background-color: black;
+    background-color: rgba(71, 69, 69, 0.418);
     border: 2px solid rgb(126, 15, 230);
 }
 
@@ -39,7 +37,6 @@
 }
 
 .slidedown p{
-    text-align: left;
     color: rgb(199, 199, 199);
     font-size: 1.4vw;
 }

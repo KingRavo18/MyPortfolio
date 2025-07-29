@@ -3,8 +3,8 @@ import {useLanguage} from '../../App.jsx'
 
 export default function Footer(){
 
-    const { t } = useLanguage();
-    const { contactTitle, phone, email, finalSignature } = t.footer;
+    const { language } = useLanguage();
+    const { contactTitle, phone, email, finalSignature } = language.footer;
     const githubUrl = "https://github.com/KingRavo18";                                        
 
     return(

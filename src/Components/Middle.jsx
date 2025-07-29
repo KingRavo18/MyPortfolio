@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react"
 import Projects from './Projects/Projects.jsx'
 import Experience from './ExperienceEducation/Experience.jsx'
 import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png'
@@ -10,7 +10,7 @@ import { useLanguage } from '../App.jsx'
 
 export default function Middle(){
 
-    const { t } = useLanguage();
+    const { language } = useLanguage();
     const { 
             bigIntro1,
             bigIntro2,
@@ -30,7 +30,7 @@ export default function Middle(){
             project3Alt,
             project4Explanation,
             project4Alt
-          } = t.middle;
+          } = language.middle;
 
 
     const [openPopupId, setOpenPopupId] = useState(null);
@@ -83,8 +83,8 @@ export default function Middle(){
     ]
 
     return(
-        <main> 
-
+        //The id is there to serve as a hook for the navigation bar
+        <main id="introduction"> 
             {/* The section where my introduction and face are */}
             <div className="introSection">
                 {/* The page where the image of my face goes */}

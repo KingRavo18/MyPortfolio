@@ -5,23 +5,22 @@ import Footer from './Components/Footer/Footer.jsx'
 import lv_translations from './languages/lv_translations.json'
 
 const LanguageContext = createContext();
-
-export function useLanguage() {
-  return useContext(LanguageContext);
+export function useLanguage(){ 
+  return useContext(LanguageContext); 
 }
+
 
 export default function App() {
 
   const [language, setLanguage] = useState(lv_translations);
-  const t = language;
 
   // Scroll to top on load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+  return(
+    <LanguageContext.Provider value={{ language, setLanguage }}>
       <Header/>
       <Middle/>
       <Footer/>

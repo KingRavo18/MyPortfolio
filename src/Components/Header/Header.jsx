@@ -5,8 +5,8 @@ import en_translations from '../../languages/en_translations.json'
 
 export default function Header(){
 
-    const { t, setLanguage } = useLanguage();
-    const { contact, projects, experience, introduction } = t.header;
+    const { language, setLanguage } = useLanguage();
+    const { contact, projects, experience, introduction } = language.header;
 
     const navItems = [
         {href: "#contact", label: contact},
@@ -16,17 +16,17 @@ export default function Header(){
     ]
 
     const translationButtons = [
-        {language: en_translations, title: "EN"},
-        {language: lv_translations, title: "LV"},
+        {languageSelected: en_translations, title: "EN"},
+        {languageSelected: lv_translations, title: "LV"},
     ]
 
     return(
         <header>
             <nav className='language'>
                 <ul>
-                    {translationButtons.map(({ language, title }) => (
+                    {translationButtons.map(({ languageSelected, title }) => (
                     <li key={title}>
-                        <button onClick={() => setLanguage(language)}>{title}</button>
+                        <button onClick={() => setLanguage(languageSelected)}>{title}</button>
                     </li>
                     ))}
                 </ul>

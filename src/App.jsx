@@ -9,7 +9,6 @@ export function useLanguage(){
   return useContext(LanguageContext); 
 }
 
-
 export default function App() {
 
   const [language, setLanguage] = useState(lv_translations);

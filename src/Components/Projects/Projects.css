@@ -1,6 +1,6 @@
 article {
-    height: 34vw;
-    width: 44vw;
+    height: 32vw;
+    width: 42vw;
     background-color: rgb(39, 38, 38);
     border: 2px solid rgb(122, 45, 194);
     border-radius: 20px;
@@ -8,7 +8,7 @@ article {
     z-index: 55;
 }
 article:hover {
-    border: 2px solid rgb(153, 89, 212);
+    border: 2px solid rgb(133, 39, 221);
     margin: -1.5vw 0 1.5vw 0;
 }
 
@@ -18,12 +18,12 @@ article p {
 
 article h2 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: white;
 }
 
 .imageContainer {
-    height: 17vw;
+    height: 16.5vw;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     overflow: hidden;
@@ -38,7 +38,7 @@ article h2 {
 
 .explenationContainer {
     margin: 0.7vw;
-    height: 7vw;
+    height: 6.5vw;
 }
 .explenationContainer p {
     font-size: 1.4vw;
@@ -52,16 +52,17 @@ article h2 {
 }
 
 .linkContainer a{
-    padding: 0.7vw 2.2vw;
+    padding: 0.6vw 2vw;
     background-color: rgb(122, 45, 194);
     cursor: pointer;
     transition: 0.5s;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    border-radius: 10px;
     color: white;
 }
 .linkContainer a:hover{
-    padding: 0.9vw 2.5vw;
-    background-color: rgb(102, 48, 153);
-    color: rgb(172, 172, 172);
+    padding: 0.7vw 2.2vw;
+    background-color: rgb(133, 39, 221);
+    font-size: 1.5vw;
 }

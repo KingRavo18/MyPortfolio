@@ -3,6 +3,7 @@ footer {
   height: 16vw;
   font-size: 1.1vw;
   color: rgb(199, 199, 199);
+  box-shadow: 0 -10px 5px rgb(38, 36, 36);
   background-color: rgb(36, 35, 35);
 }
 
@@ -26,5 +27,5 @@ footer {
   transition: 0.5s;
 }
 .contact a:hover {
-  color: rgb(122, 45, 194);
+  color: rgb(133, 39, 221);
 }

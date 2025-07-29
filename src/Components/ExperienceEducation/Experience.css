@@ -1,12 +1,12 @@
 .experienceSection article {
     background-color: rgb(122, 45, 194);
     border-radius: 20px;
-    width: 80vw;
+    width: 70vw;
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    height: 9vw;
+    height: 8vw;
     margin: 1vw 1vw 0 1vw;
     z-index: 55;
     transition: 0.5s;
@@ -21,12 +21,12 @@
 }
 
 .experienceSection article h1{
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .slidedown {
     z-index: 2;
-    width: 80vw;
+    width: 70vw;
     height: auto;
     margin-top: -1.6vw;
     padding: 1.8vw;

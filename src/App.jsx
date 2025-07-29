@@ -1,7 +1,7 @@
 import { useState, useContext, createContext, useEffect } from 'react'
-import Header from './Header/Header.jsx'
-import Middle from './Middle.jsx'
-import Footer from './Footer/Footer.jsx'
+import Header from './Components/Header/Header.jsx'
+import Middle from './Components/Middle.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 import lv_translations from './languages/lv_translations.json'
 
 const LanguageContext = createContext();

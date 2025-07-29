@@ -1,5 +1,5 @@
 import './Footer.css'
-import {useLanguage} from '../App.jsx'
+import {useLanguage} from '../../App.jsx'
 
 export default function Footer(){
 

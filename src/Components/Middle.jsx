@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 import Projects from './Projects/Projects.jsx'
 import Experience from './ExperienceEducation/Experience.jsx'
-import PurpleCircles from './assets/PurpleCircles.jsx'
-import DisciplinatorsScreenshot from './assets/Disciplinators_screenshot.png'
-import SEO_Screenshot from './assets/SEO_screenshot.png'
-import SandboxScreenshot from './assets/Sandbox_screenshot.png'
-import Magic8BallScreenshot from './assets/Magic_8-Ball_Screenshot.png'
-import AuthorsFace from './assets/Authors_Face.png'
-import { useLanguage } from './App.jsx'
+import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png'
+import SEO_Screenshot from '../assets/SEO_screenshot.png'
+import SandboxScreenshot from '../assets/Sandbox_screenshot.png'
+import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png'
+import AuthorsFace from '../assets/Authors_Face.png'
+import { useLanguage } from '../App.jsx'
 
 export default function Middle(){
 
@@ -88,9 +87,20 @@ export default function Middle(){
 
             {/* The section where my introduction and face are */}
             <div className="introSection">
-                {/* The circle where my introduction will be written */}
-                <div className="slideInFromBottom backgroundFigures backgroundTextArea left-[8%] top-[21%]">
-                    <h1 className="mt-[8%]">Raivo Kingovskis</h1>
+                {/* The page where the image of my face goes */}
+                <div className="veryBig">
+                    <img className="faceImage" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
+                </div>
+
+                <span className="binder-ring left-[47.2vw] top-[10vw]"/>
+
+                {/* The page where my introduction will be written */}
+                <div className="backgroundTextArea">
+                    <div className="introduction-title">
+                        <span className="small-bubble"/>
+                        <h1>Raivo Kingovskis</h1>
+                        <span className="small-bubble"/>
+                    </div>
                     <p>
                         {bigIntro1}
                         <br/>
@@ -98,11 +108,6 @@ export default function Middle(){
                         <br/>
                         {bigIntro3}
                     </p>
-                </div>
-
-                {/* Circle where the image of my face goes */}
-                <div className="veryBig backgroundFigures below left-[42%] top-[13%]">
-                    <img className="faceImage" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
                 </div>
             </div>
 
@@ -121,7 +126,11 @@ export default function Middle(){
             </div>
 
             {/* My Projects */}
-            <h1 id="projects">{projectsTitle}</h1>
+            <div id="projects">
+                <span className="small-bubble"/>
+                <h1>{projectsTitle}</h1>
+                <span className="small-bubble"/>
+            </div>
 
             <div className="projectSection">
                 {projectsData.map(({ title, desc, image, alt, location, button }) => (

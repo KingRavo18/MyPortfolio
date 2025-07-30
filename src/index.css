@@ -16,9 +16,8 @@ main {
 h1 {
   color: white;
   font-size: 2.5vw;
-  padding: 0.6vw;
+  padding: 0;
   z-index: 2;
-  text-align: center;
 }
 
 .introSection {
@@ -123,4 +122,8 @@ h1 {
   display: flex;
   align-items: center;
   height: auto;
+}
+
+.flat-purple-background {
+  background-color: #7a2dc2;
 }

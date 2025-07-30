@@ -112,7 +112,7 @@ export default function Middle(){
             </div>
 
             {/* The section where my experience and education are described */}
-            <div className="experienceSection">
+            <div className="p-[1.8vw] flex-col flex items-center h-auto">
                 {experiancePopup.map(({ id, title, desc1 }) => (
                     <Experience 
                             key={id}

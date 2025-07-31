@@ -88,20 +88,20 @@ export default function Middle(){
             {/* The section where my introduction and face are */}
             <div className="flex justify-center items-center gap-[2vw] w-full h-[90vh]">
                 {/* The page where the image of my face goes */}
-                <div className="bg-[rgb(199,_199,_199)] rounded-tr-[20px] rounded-br-[20px] w-[33.8vw] h-[31.8vw] overflow-hidden">
+                <div className="bg-[#c7c7c7ff] rounded-tr-[20px] rounded-br-[20px] w-[33.8vw] h-[31.8vw] overflow-hidden">
                     <img className="w-full h-full block object-cover" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
                 </div>
 
-                <span className="absolute rounded-[10px] bg-[rgb(122,_45,_194)] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[10vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[10vw]"/>
 
                 {/* The page where my introduction will be written */}
-                <div className="rounded-tl-[20px] rounded-bl-[20px] bg-[rgb(39,_38,_38)] border-l-2 border-[rgb(122,45,194)] w-[33.8vw] h-[31.8vw] [box-shadow:10px_10px_5px_rgb(38,_36,_36)]">
+                <div className="rounded-tl-[20px] rounded-bl-[20px] bg-[#272626ff] border-l-2 border-[#7a2dc2ff] w-[33.8vw] h-[31.8vw] [box-shadow:10px_10px_5px_rgb(38,36,36)]">
                     <div className="flex h-auto justify-center items-center gap-[1vw]">
-                        <span className="bg-[rgb(122,_45,_194)] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                        <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
                         <h1 className="text-[white] text-[2.5vw] p-0 -mt-[0.2vw]">Raivo Kingovskis</h1>
-                        <span className="bg-[rgb(122,_45,_194)] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                        <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
                     </div>
-                    <p className="text-[rgb(199,_199,_199)] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-[1.48vw] text-justify">
+                    <p className="text-[#c7c7c7ff] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-[1.48vw] text-justify">
                         {bigIntro1}
                         <br/>
                         {bigIntro2}
@@ -127,9 +127,9 @@ export default function Middle(){
 
             {/* My Projects */}
             <div id="projects" className="flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full">
-                <span className="bg-[rgb(122,_45,_194)] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
                 <h1 className="text-[white] text-[6vw]">{projectsTitle}</h1>
-                <span className="bg-[rgb(122,_45,_194)] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
             </div>
 
             <div className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">

@@ -21,7 +21,7 @@ export default function Header(){
 
     return(
         <header className="fixed flex items-center justify-between px-[1.65vw] py-[0] w-full h-[5vw] 
-                           bg-[rgb(36,_35,_35)] text-[rgb(199,_199,_199)] [box-shadow:0_10px_10px_rgb(38,_36,_36)] z-1000"
+                           bg-[#242323ff] text-[#c7c7c7ff] [box-shadow:0_10px_10px_rgb(38,36,36)] z-1000"
         >
             <nav className="language">
                 <ul>

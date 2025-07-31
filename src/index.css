@@ -9,121 +9,23 @@ html, body {
   overflow-x: hidden;
 }
 
-main {
-  padding-top: 4vw;
-}
-
-h1 {
-  color: white;
-  font-size: 2.5vw;
-  padding: 0;
-  z-index: 2;
-}
-
-.introSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  width: 100%;
-  height: 90vh;
-}
-
-.veryBig {
-  background-color: rgb(199, 199, 199);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 33.8vw;
-  height: 31.8vw;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.faceImage {
-  width: 100%;
-  height: 100%;  
-  display: block;
-  object-fit: cover;
-}
-
-.binder-ring {
-  position: absolute;
-  border-radius: 10px;
-  background-color: rgb(122, 45, 194);
-  width: 4.4vw;
-  height: 0.5vw;
-  z-index: 900; 
-}
-
-.backgroundTextArea {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+.flat-main-background-onHover:hover {
   background-color: rgb(39, 38, 38);
-  border-left: 2px solid rgb(122, 45, 194);
-  width: 33.8vw;
-  height: 31.8vw;
-  z-index: 2;
-  box-shadow: 10px 10px 5px rgb(38, 36, 36);
 }
-
-.backgroundTextArea p{
-  color: rgb(199, 199, 199);
-  margin: 0.2vw 1.3vw 1.4vw 2vw;
-  font-size: 1.48vw; 
-  text-align: justify;
+.flat-main-background-onActive:active {
+  background-color: rgb(29, 28, 28);
 }
-
-.introduction-title {
-  display: flex;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
+.flat-purple-border-onHover:hover {
+  border: 2px solid rgb(122, 45, 194);
 }
-
-.introduction-title h1{
-  margin-top: -0.2vw;
+.flat-purple-border-onActive:active {
+  border: 2px solid rgb(126, 15, 230);
 }
-
-#projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 3.8vw 0 2vw 0;
-  height: auto;
-  width: 100%;
+.header-text-onHover:hover {
+  color: rgb(133, 39, 221);
+  background-color: rgba(53, 51, 51, 0.5);
 }
-
-#projects h1{
-  font-size: 6vw;
-}
-
-.small-bubble {
-  background-color: rgb(122, 45, 194);
-  border-radius: 50%;
-  width: 0.8vw;
-  height: 0.8vw;
-}
-
-.projectSection {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 1vw 0 9vw 0;
-  width: 100%;
-  gap: 4vw;
-  flex-wrap: wrap;
-}
-
-.experienceSection {
-  padding: 1.8vw;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  height: auto;
-}
-
-.flat-purple-background {
-  background-color: #7a2dc2;
+.header-text-onActive:active {
+  color: rgb(132, 51, 207);
+  background-color: rgba(71, 69, 69, 0.418);
 }

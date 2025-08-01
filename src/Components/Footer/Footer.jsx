@@ -18,7 +18,7 @@ export default function Footer(){
                     </a>
                 </p>
             </div>
-            <p className='text-center'>{new Date().getFullYear()} {finalSignature}</p>
+            <p className='text-center'>{finalSignature}</p>
         </footer>
     );
 }

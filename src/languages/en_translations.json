@@ -3,7 +3,9 @@
     "contact": "Contact",
     "projects": "Projects",
     "experience": "Experience and Education",
-    "introduction": "Introduction"
+    "introduction": "Introduction",
+    "hoverEN": "Language I like using",
+    "hoverLV": "Birth language"
   },
   "middle": {
     "bigIntro1": "Hello, I started programming for money but grew to enjoy it as well. So win, win! I studied it for four years and have gone through an internship too.",
@@ -12,9 +14,14 @@
     "imageAlt": "Image of Raivo Kingovskis",
     "educationTitle": "EDUCATION",
     "educationExplanation1": "Nothing",
+    "educationExplanation2": "Nothing",
     "experienceTitle": "EXPERIENCE",
-    "experienceExplanation1": "Nothing",
-    "projectsTitle": "PROJECTS",
+    "experienceExplanation1": "- I spent 6 months in an internship in the company SIA 'ETEKOS' where I made both the full front-end and some backend for multiple websites. This was also the time I earned experience working in a team with other interns",
+    "experienceExplanation2": "- Front-end: HTML, CSS, javascript, typescript and React on multiple projects. For front-end designs, I used Figma, Tailwind CSS and Sass",
+    "experienceExplanation3": "- Back-end: javascript and php, along with MySQL on phpMyAdmin",
+    "experienceExplanation4": "- Minor note: C++ and C#, the latter of which I used for Unity",
+    "experienceExplanation5": "- Finally, all my projects and code are available to view on Github. (See in the Contact section)",
+    "projectsTitle": "PROJECTS", 
     "project1Explanation": "A solo project webpage created just for the design using React, javascript and Tailwind CSS. I was provided with a sample and perfectly recreated it, animations and all.",
     "project2Explanation": "A solo project website composed of five different lists, a .pdf reader and user accounts, made using a full front-end with animations and PHP backend alongside javascript and an SQL database.",
     "project3Explanation": "A team project made with two others, where we added to a provided webpage the ability to pull search results for other websites from an api, using only that webpage's link.",
@@ -29,6 +36,6 @@
     "contactTitle": "Contact",
     "phone": "Phone:  +371 28 378 300",
     "email": "Email:  raivokingovskis05@gmail.com",
-    "finalSignature": "Raivo Kingovskis's Portfolio"
+    "finalSignature": "Thank YOU for your time!"
   }
 }

@@ -18,8 +18,13 @@ export default function Middle(){
             imageAlt,
             educationTitle,
             educationExplanation1,
+            educationExplanation2,
             experienceTitle,
             experienceExplanation1,
+            experienceExplanation2,
+            experienceExplanation3,
+            experienceExplanation4,
+            experienceExplanation5,
             projectsTitle,
             project1Explanation,
             project1Alt,
@@ -42,8 +47,21 @@ export default function Middle(){
 
     //the array which contains data for the experiance popups
     const experiancePopup = [
-        {id: "Education_Popup", title: educationTitle, desc1: educationExplanation1},
-        {id: "Experience_Popup", title: experienceTitle, desc1: experienceExplanation1},
+        {
+         id: "Education_Popup", 
+         title: educationTitle, 
+         desc1: educationExplanation1, 
+         desc2: educationExplanation2
+        },
+        {
+         id: "Experience_Popup", 
+         title: experienceTitle, 
+         desc1: experienceExplanation1, 
+         desc2: experienceExplanation2, 
+         desc3: experienceExplanation3, 
+         desc4: experienceExplanation4, 
+         desc5: experienceExplanation5
+        },
     ]
 
     //the array which contains data for my projects
@@ -92,7 +110,11 @@ export default function Middle(){
                     <img className="w-full h-full block object-cover" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
                 </div>
 
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[10vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[9vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[16vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[23vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[30vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw]"/>
 
                 {/* The page where my introduction will be written */}
                 <div className="rounded-tl-[20px] rounded-bl-[20px] bg-[#272626ff] border-l-2 border-[#7a2dc2ff] w-[33.8vw] h-[31.8vw] [box-shadow:10px_10px_5px_rgb(38,36,36)]">
@@ -112,14 +134,18 @@ export default function Middle(){
             </div>
 
             {/* The section where my experience and education are described */}
-            <div className="p-[1.8vw] flex-col flex items-center h-auto">
-                {experiancePopup.map(({ id, title, desc1 }) => (
+            <div className="p-[1.8vw] flex-col flex items-center h-auto" id="experience">
+                {experiancePopup.map(({ id, title, desc1, desc2, desc3, desc4, desc5 }) => (
                     <Experience 
                             key={id}
                             func={() => togglePopup(id)} 
                             ID={id} 
                             title={title} 
                             desc1={desc1}
+                            desc2={desc2}
+                            desc3={desc3}
+                            desc4={desc4}
+                            desc5={desc5}
                             isOpen={openPopupId === id}
                     />
                 ))}

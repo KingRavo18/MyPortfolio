@@ -3,12 +3,14 @@
     "contact": "Kontakts",
     "projects": "Projekti",
     "experience": "Pieredze un Izglītība",
-    "introduction": "Iepazīšanās"
+    "introduction": "Iepazīšanās",
+    "hoverEN": "Valoda kuru laprāt izmantoju",
+    "hoverLV": "Dzimtā valoda"
   },
   "middle": {
-    "bigIntro1": "Hello, I started programming for money but grew to enjoy it as well. So win, win! I studied it for four years and have gone through an internship too.",
-    "bigIntro2": "My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well. In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.",
-    "bigIntro3": "Read further for details!",
+    "bigIntro1": "Sveiki, es sāku programmēt naudas dēļ, bet to sāku tiešām izbaudīt. Tāpēc uzvaru abpusēji! Es studēju četrus gadus un esmu izgājis cauri arī praksei.",
+    "bigIntro2": "Priekšgalsistēmā man ir vislielākās spējas. Taču man ir pietiekoši pieredze darbojoties arī ar aizmugursistēmām. Man patīk lasīt romānus brīvajā laikā un cenšos arī savus rakstīt. Es esmu tikpat centīgs ar savu kodu kā ar katru vārdu kuru rakstu dēļ savas mākslas.",
+    "bigIntro3": "Detaļas atradīsiet tālāk!",
     "imageAlt": "Raivo Kingovska Attēls",
     "educationTitle": "IZGLĪTĪBA",
     "educationExplanation1": "Nekas",
@@ -17,7 +19,7 @@
     "projectsTitle": "PROJEKTI",
     "project1Explanation": "Nekas",
     "project2Explanation": "Nekas",
-    "project3Explanation": "Nekas",
+    "project3Explanation": "Komandas projekts veidots ar diviem biedriem, kur mēs pievienojām jau-izveidotaik tīmekļa vietnei spēju vilkt meklēšanas resultātus priekš citām vietnēm no api, izmantojot tikai tās vietnes hipersaiti.",
     "project4Explanation": "Izveidots prieka pēc ar javascript un vienkāršu css. Īsts, neapstrīdams meistardarbs.",
     "project1Alt": "Sandbox Design Tīmekļa Vietne",
     "project2Alt": "Disciplinators Tīmekļa Vietne",
@@ -29,6 +31,6 @@
     "contactTitle": "Kontakts",
     "phone": "Telefons: +371 28 378 300",
     "email": "E-pasts:  raivokingovskis05@gmail.com",
-    "finalSignature": "Raivo Kingovska Portfolio"
+    "finalSignature": "Paldies JUMS par jūsu laiku!"
   }
 }

@@ -16,9 +16,7 @@ export default function Middle(){
             bigIntro2,
             bigIntro3,
             imageAlt,
-            educationTitle,
-            educationExplanation1,
-            educationExplanation2,
+            educationExplanation,
             experienceTitle,
             experienceExplanation1,
             experienceExplanation2,
@@ -39,30 +37,10 @@ export default function Middle(){
 
 
     const [openPopupId, setOpenPopupId] = useState(null);
-
     //this toggles the experiances and education popups open and closed
     const togglePopup = (id) => {
         setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
     }
-
-    //the array which contains data for the experiance popups
-    const experiancePopup = [
-        {
-         id: "Education_Popup", 
-         title: educationTitle, 
-         desc1: educationExplanation1, 
-         desc2: educationExplanation2
-        },
-        {
-         id: "Experience_Popup", 
-         title: experienceTitle, 
-         desc1: experienceExplanation1, 
-         desc2: experienceExplanation2, 
-         desc3: experienceExplanation3, 
-         desc4: experienceExplanation4, 
-         desc5: experienceExplanation5
-        },
-    ]
 
     //the array which contains data for my projects
     const projectsData = [
@@ -114,7 +92,7 @@ export default function Middle(){
                 <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[16vw]"/>
                 <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[23vw]"/>
                 <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[30vw]"/>
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw]"/>
+                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw]" id="experience"/>
 
                 {/* The page where my introduction will be written */}
                 <div className="rounded-tl-[20px] rounded-bl-[20px] bg-[#272626ff] border-l-2 border-[#7a2dc2ff] w-[33.8vw] h-[31.8vw] [box-shadow:10px_10px_5px_rgb(38,36,36)]">
@@ -133,22 +111,23 @@ export default function Middle(){
                 </div>
             </div>
 
+            <div className="my-[80px]">
+                <h1 className="text-center text-white text-[3vw]">{educationExplanation}</h1>
+            </div>
+
             {/* The section where my experience and education are described */}
-            <div className="p-[1.8vw] flex-col flex items-center h-auto" id="experience">
-                {experiancePopup.map(({ id, title, desc1, desc2, desc3, desc4, desc5 }) => (
+            <div className="p-[1.8vw] flex-col flex items-center h-auto">
                     <Experience 
-                            key={id}
-                            func={() => togglePopup(id)} 
-                            ID={id} 
-                            title={title} 
-                            desc1={desc1}
-                            desc2={desc2}
-                            desc3={desc3}
-                            desc4={desc4}
-                            desc5={desc5}
-                            isOpen={openPopupId === id}
+                        func={() => togglePopup("Experience_Popup")} 
+                        ID="Experience_Popup"
+                        title={experienceTitle} 
+                        desc1={experienceExplanation1}
+                        desc2={experienceExplanation2}
+                        desc3={experienceExplanation3}
+                        desc4={experienceExplanation4}
+                        desc5={experienceExplanation5}
+                        isOpen={openPopupId === "Experience_Popup"}
                     />
-                ))}
             </div>
 
             {/* My Projects */}
@@ -160,7 +139,7 @@ export default function Middle(){
 
             <div className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">
                 {projectsData.map(({ title, desc, image, alt, location, button }) => (
-                <Projects 
+                    <Projects 
                         key={title}
                         title={title} 
                         explanation={desc} 
@@ -168,7 +147,7 @@ export default function Middle(){
                         alt={alt} 
                         location={location} 
                         buttonName={button}
-                />
+                    />
                 ))}
             </div>
             

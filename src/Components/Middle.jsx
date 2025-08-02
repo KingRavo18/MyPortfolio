@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import Projects from './Projects/Projects.jsx'
 import Experience from './ExperienceEducation/Experience.jsx'
 import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png'

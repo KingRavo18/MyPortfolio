@@ -9,23 +9,8 @@ html, body {
   overflow-x: hidden;
 }
 
-.flat-main-background-onHover:hover {
-  background-color: #272626;
-}
-.flat-main-background-onActive:active {
-  background-color: #1d1c1c;
-}
-.flat-purple-border-onHover:hover {
-  border: 2px solid #7a2dc2;
-}
-.flat-purple-border-onActive:active {
-  border: 2px solid #7e0fe6;
-}
-.header-text-onHover:hover {
-  color: #8527dd;
-  background-color: #35333380;
-}
-.header-text-onActive:active {
-  color: #8433cf;
-  background-color: #4745456b;
+@keyframes headerSlidingDown {
+  0%   {top:-100vw;}
+  50%   {top:-10vw;}
+  100% {top:0px;}
 }

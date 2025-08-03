@@ -20,7 +20,7 @@ export default function Header(){
     ]
 
     return(
-        <header className="fixed flex items-center justify-between px-[1.65vw] py-[0] w-full h-[5vw] 
+        <header className="fixed flex items-center justify-between px-[1.65vw] py-[0] w-full h-[5vw] [animation-name:headerSlidingDown] [animation-duration:0.5s] 
                            bg-[#242323ff] text-[#c7c7c7ff] [box-shadow:0_10px_10px_rgb(38,36,36)] z-1000"
         >
             <nav className="language">
@@ -28,8 +28,8 @@ export default function Header(){
                     {translationButtons.map(({ languageSelected, title, hover }) => (
                     <li className="float-right text-[1.35vw]" key={title}>
                         <button className="cursor-pointer p-[0.4vw] rounded-[5px] [transition:0.5s] text-[2vw]
-                                           header-text-onHover hover:text-[2.1vw]
-                                           header-text-onActive active:text-[2.2vw]" 
+                                           hover:text-[#8527dd] hover:bg-[#35333380] hover:text-[2.1vw]
+                                           active:text-[#8433cf] active:bg-[#4745456b] active:text-[2.2vw]" 
                                            onClick={() => setLanguage(languageSelected)}
                                            title={hover}
                         >

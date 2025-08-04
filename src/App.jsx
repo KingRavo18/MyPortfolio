@@ -14,10 +14,11 @@ export default function App() {
   const [language, setLanguage] = useState(en_translations);
 
   // Scroll to top on load
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return(
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <Header/>

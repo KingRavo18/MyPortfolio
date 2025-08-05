@@ -45,8 +45,8 @@ export default function Header(){
                     <li className="float-right text-[1.35vw]" key={href}>
                         <a href={href}>
                             <button className="cursor-pointer p-[0.4vw] rounded-[5px] [transition:0.5s] 
-                                               header-text-onHover hover:text-[1.4vw]
-                                               header-text-onActive active:text-[1.45vw]"
+                                               hover:text-[#8527dd] hover:bg-[#35333380] hover:text-[1.4vw]
+                                               active:text-[#8433cf] active:bg-[#4745456b] active:text-[1.45vw]"
                             >
                                 {label}
                             </button>

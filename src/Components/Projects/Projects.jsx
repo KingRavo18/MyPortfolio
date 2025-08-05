@@ -2,8 +2,8 @@
 export default function Projects({image, alt, title, explanation, location, buttonName}){
 
     return(
-        <article className="h-[32vw] w-[42vw] bg-[#272626ff] border-[2px] border-[solid] border-[#7a2dc2ff] rounded-[20px] [transition:0.5s]
-                            hover:border-[2px] hover:border-[solid] hover:border-[#8527ddff] hover:ml-[0] hover:mr-[0] hover:-my-[1.5vw]"
+        <article className="h-[32vw] w-[42vw] bg-[#272626ff] border-[2px] border-[#7a2dc2ff] rounded-[20px] [transition:0.5s]
+                            hover:border-[2px] hover:border-[#8527ddff] hover:ml-[0] hover:mr-[0] hover:-my-[1.5vw]"
         >
             <div className="h-[16.5vw] rounded-tr-[20px] rounded-tl-[20px] overflow-hidden">
                 <img className="w-full h-full object-cover block" src={image} alt={alt || "Project image"} loading="lazy"/>

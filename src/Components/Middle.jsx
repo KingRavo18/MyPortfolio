@@ -37,12 +37,11 @@ export default function Middle(){
 
 
     const [openPopupId, setOpenPopupId] = useState(null);
-    //this toggles the experiances and education popups open and closed
+    //this toggles the experiances popup open and closed
     const togglePopup = (id) => {
         setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
     }
 
-    //the array which contains data for my projects
     const projectsData = [
         {
          title: "Sandbox", 
@@ -81,11 +80,9 @@ export default function Middle(){
     return(
         //The id is there to serve as a hook for the navigation bar
         <main id="introduction" className="pt-[4vw]"> 
-            {/* The section where my introduction and face are */}
-            <div className="flex justify-center items-center gap-[2vw] w-full h-[90vh]">
-                {/* The page where the image of my face goes */}
+            <section className="flex justify-center items-center gap-[2vw] w-full h-[90vh]">
                 <div className="bg-[#c7c7c7ff] rounded-tr-[20px] rounded-br-[20px] w-[33.8vw] h-[31.8vw] overflow-hidden">
-                    <img className="w-full h-full block object-cover" src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} />
+                    <img src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} className="w-full h-full block object-cover"/>
                 </div>
 
                 <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[9vw]"/>
@@ -109,14 +106,13 @@ export default function Middle(){
                         {bigIntro3}
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="my-[80px]">
+            <section className="my-[80px]">
                 <h1 className="text-center text-white text-[3vw]">{educationExplanation}</h1>
-            </div>
+            </section>
 
-            {/* The section where my experience and education are described */}
-            <div className="p-[1.8vw] flex-col flex items-center h-auto">
+            <section className="p-[1.8vw] flex-col flex items-center h-auto">
                     <Experience 
                         func={() => togglePopup("Experience_Popup")} 
                         ID="Experience_Popup"
@@ -128,16 +124,15 @@ export default function Middle(){
                         desc5={experienceExplanation5}
                         isOpen={openPopupId === "Experience_Popup"}
                     />
-            </div>
+            </section>
 
-            {/* My Projects */}
-            <div id="projects" className="flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full">
+            <section id="projects" className="flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full">
                 <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
                 <h1 className="text-[white] text-[6vw]">{projectsTitle}</h1>
                 <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
-            </div>
+            </section>
 
-            <div className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">
+            <section className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">
                 {projectsData.map(({ title, desc, image, alt, location, button }) => (
                     <Projects 
                         key={title}
@@ -149,7 +144,7 @@ export default function Middle(){
                         buttonName={button}
                     />
                 ))}
-            </div>
+            </section>
             
         </main>
     );

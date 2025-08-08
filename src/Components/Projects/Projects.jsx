@@ -1,9 +1,16 @@
+import { useInView } from "react-intersection-observer"
 
 export default function Projects({image, alt, title, explanation, location, buttonName}){
 
+    const { ref: project, inView: projectIsVisible } = useInView({
+        triggerOnce: true, 
+        threshold: 0.1   
+    });
+
     return(
-        <article className="h-[32vw] w-[42vw] bg-[#272626ff] border-[2px] border-[#7a2dc2ff] rounded-[20px] [transition:0.5s]
-                            hover:border-[2px] hover:border-[#8527ddff] hover:ml-[0] hover:mr-[0] hover:-my-[1.5vw]"
+        <article ref={project} className={`h-[32vw] w-[42vw] bg-[#272626ff] border-[2px] border-[#7a2dc2ff] rounded-[20px] [transition:0.5s]
+                                          hover:border-[2px] hover:border-[#8527ddff] hover:ml-[0] hover:mr-[0] hover:-my-[1.5vw] duration-2000
+                                          ${projectIsVisible ? "mt-0 opacity-100" : "mt-[5vw] opacity-0"}`}
         >
             <div className="h-[16.5vw] rounded-tr-[20px] rounded-tl-[20px] overflow-hidden">
                 <img className="w-full h-full object-cover block" src={image} alt={alt || "Project image"} loading="lazy"/>

@@ -1,12 +1,14 @@
 import { useState } from "react"
+import { useInView } from "react-intersection-observer"
+import { useLanguage } from '../App.jsx'
 import Projects from './Projects/Projects.jsx'
-import Experience from './ExperienceEducation/Experience.jsx'
+import Experience from './Experience/Experience.jsx'
 import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png'
 import SEO_Screenshot from '../assets/SEO_screenshot.png'
 import SandboxScreenshot from '../assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png'
 import AuthorsFace from '../assets/Authors_Face.png'
-import { useLanguage } from '../App.jsx'
+
 
 export default function Middle(){
 
@@ -77,6 +79,15 @@ export default function Middle(){
         },
     ]
 
+    const { ref: projectTitle, inView: projectTitleIsVisible } = useInView({
+        triggerOnce: true, 
+        threshold: 0.1   
+    });
+    const { ref: education, inView: educationIsVisible } = useInView({
+        triggerOnce: true, 
+        threshold: 0.1   
+    });
+
     return(
         //The id is there to serve as a hook for the navigation bar
         <main id="introduction" className="pt-[4vw]"> 
@@ -108,8 +119,8 @@ export default function Middle(){
                 </div>
             </section>
 
-            <section className="my-[80px]">
-                <h1 className="text-center text-white text-[3vw]">{educationExplanation}</h1>
+            <section ref={education} className={`duration-2000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[120px] opacity-0"}`}>
+                <h1 className="text-center text-white text-[3vw] ">{educationExplanation}</h1>
             </section>
 
             <section className="p-[1.8vw] flex-col flex items-center h-auto">
@@ -126,7 +137,8 @@ export default function Middle(){
                     />
             </section>
 
-            <section id="projects" className="flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full">
+            <section ref={projectTitle} id="projects" className={`flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full duration-2000
+                                                                 ${projectTitleIsVisible ? "my-[3.8vw] opacity-100" : "my-[5vw] opacity-0"}`}>
                 <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
                 <h1 className="text-[white] text-[6vw]">{projectsTitle}</h1>
                 <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>

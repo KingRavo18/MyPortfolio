@@ -119,8 +119,8 @@ export default function Middle(){
                 </div>
             </section>
 
-            <section ref={education} className={`duration-2000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[120px] opacity-0"}`}>
-                <h1 className="text-center text-white text-[3vw] ">{educationExplanation}</h1>
+            <section ref={education} className={`duration-1000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[180px] opacity-0"}`}>
+                <h1 className="text-center text-white text-[3vw] px-[7vw]">{educationExplanation}</h1>
             </section>
 
             <section className="p-[1.8vw] flex-col flex items-center h-auto">

@@ -8,6 +8,8 @@ import SEO_Screenshot from '../assets/SEO_screenshot.png'
 import SandboxScreenshot from '../assets/Sandbox_screenshot.png'
 import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png'
 import AuthorsFace from '../assets/Authors_Face.png'
+import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png'
+
 
 
 export default function Middle(){
@@ -34,7 +36,9 @@ export default function Middle(){
             project3Explanation,
             project3Alt,
             project4Explanation,
-            project4Alt
+            project4Alt,
+            project5Explanation,
+            project5Alt
           } = language.middle;
 
 
@@ -75,6 +79,14 @@ export default function Middle(){
          image: Magic8BallScreenshot, 
          alt: project4Alt, 
          location: "https://magic-8-ball-seven.vercel.app/", 
+         button: buttonName
+        },
+        {
+         title: "Small React Projects", 
+         desc: project5Explanation, 
+         image: SmallReactProjectsScreenshot, 
+         alt: project5Alt, 
+         location: "https://small-react-projects-eight.vercel.app/", 
          button: buttonName
         },
     ]

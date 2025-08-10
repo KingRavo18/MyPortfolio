@@ -24,7 +24,7 @@ export default function Experience({func, title, ID, desc1, desc2, desc3, desc4,
         {isOpen && (
             <div id={ID} className='w-[70vw] h-auto mt-[-2.5vw] p-[1.8vw] bg-[#272626ff] border-[2px] border-[#7a2dc2ff] rounded-br-[20px] rounded-bl-[20px]'>
                 {experianceData.map((dataRow, index) => (
-                    <p key={index} className='text-[#c7c7c7ff] text-[1.4vw] mt-[10px]'>
+                    <p key={index} className='text-[#c7c7c7ff] text-[1.7vw] mt-[10px] text-justify'>
                         {dataRow}
                     </p>
                 ))}

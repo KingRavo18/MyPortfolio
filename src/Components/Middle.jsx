@@ -1,14 +1,14 @@
-import { useState } from "react"
-import { useInView } from "react-intersection-observer"
-import { useLanguage } from '../App.jsx'
-import Projects from './Projects/Projects.jsx'
-import Experience from './Experience/Experience.jsx'
-import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png'
-import SEO_Screenshot from '../assets/SEO_screenshot.png'
-import SandboxScreenshot from '../assets/Sandbox_screenshot.png'
-import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png'
-import AuthorsFace from '../assets/Authors_Face.png'
-import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png'
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { useLanguage } from '../App.jsx';
+import Projects from './Projects/Projects.jsx';
+import Experience from './Experience/Experience.jsx';
+import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png';
+import SEO_Screenshot from '../assets/SEO_screenshot.png';
+import SandboxScreenshot from '../assets/Sandbox_screenshot.png';
+import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png';
+import AuthorsFace from '../assets/Authors_Face.png';
+import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png';
 
 export default function Middle(){
 
@@ -40,13 +40,9 @@ export default function Middle(){
             project5Alt
           } = language.middle;
 
-
-    const [openPopupId, setOpenPopupId] = useState(null);
     //this toggles the experiances popup open and closed
-
-    const togglePopup = (id) => {
-        setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
-    }
+    const [openPopupId, setOpenPopupId] = useState(null);
+    const togglePopup = (id) => setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
 
     const projectsData = [
         {

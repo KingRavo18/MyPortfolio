@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer";
 
 export default function Experience({func, title, ID, desc1, desc2, desc3, desc4, desc5, isOpen}) {
 

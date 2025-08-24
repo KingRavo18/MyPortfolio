@@ -1,4 +1,4 @@
-import { useInView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer";
 
 export default function Projects({image, alt, title, explanation, location, location2, buttonName, button2Name}){
 

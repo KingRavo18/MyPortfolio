@@ -1,6 +1,6 @@
-import {useLanguage} from '../../App.jsx'
-import lv_translations from '../../languages/lv_translations.json'
-import en_translations from '../../languages/en_translations.json'
+import {useLanguage} from '../../App.jsx';
+import lv_translations from '../../languages/lv_translations.json';
+import en_translations from '../../languages/en_translations.json';
 
 export default function Header(){
 

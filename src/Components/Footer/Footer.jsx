@@ -1,5 +1,5 @@
-import {useInView} from "react-intersection-observer"
-import {useLanguage} from '../../App.jsx'
+import {useInView} from "react-intersection-observer";
+import {useLanguage} from '../../App.jsx';
 
 export default function Footer(){
 

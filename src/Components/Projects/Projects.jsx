@@ -8,8 +8,8 @@ export default function Projects({image, alt, title, explanation, location, loca
     });
 
     const buttons = [
-        { button: buttonName, link: location},
-        { button: button2Name, link: location2},
+        { button: buttonName, link: location },
+        { button: button2Name, link: location2 },
     ]
 
     return(

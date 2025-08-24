@@ -10,8 +10,6 @@ import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png'
 import AuthorsFace from '../assets/Authors_Face.png'
 import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png'
 
-
-
 export default function Middle(){
 
     const { language } = useLanguage();

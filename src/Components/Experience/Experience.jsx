@@ -10,7 +10,6 @@ export default function Experience({func, title, ID, desc1, desc2, desc3, desc4,
         isOpen ? setIsVisible(true) : setIsVisible(false);
     }, [isOpen]) 
     
-
     const { ref: experiance, inView: experianceIsVisible } = useInView({
         triggerOnce: true, 
         threshold: 0.1   

@@ -31,6 +31,7 @@ export default function Middle(){
             project1Explanation,
             project1Alt,
             buttonName,
+            button2Name,
             project2Explanation,
             project2Alt,
             project3Explanation,
@@ -44,6 +45,7 @@ export default function Middle(){
 
     const [openPopupId, setOpenPopupId] = useState(null);
     //this toggles the experiances popup open and closed
+
     const togglePopup = (id) => {
         setOpenPopupId(prevOpenPopupId => (prevOpenPopupId === id ? null : id));
     }
@@ -55,7 +57,9 @@ export default function Middle(){
          image: SandboxScreenshot, 
          alt: project1Alt, 
          location: "https://smuka-lapa.vercel.app/", 
-         button: buttonName
+         location2: "https://github.com/KrievinsT/smuka_lapa", 
+         button: buttonName,
+         button2: button2Name
         },
         {
          title: "Disciplinators", 
@@ -63,7 +67,9 @@ export default function Middle(){
          image: DisciplinatorsScreenshot, 
          alt: project2Alt, 
          location: "https://disciplinators.kesug.com/", 
-         button: buttonName
+         location2: "https://github.com/KingRavo18/Disciplinator-Saraksts", 
+         button: buttonName,
+         button2: button2Name
         },
         {
          title: "SEO", 
@@ -71,15 +77,9 @@ export default function Middle(){
          image: SEO_Screenshot, 
          alt: project3Alt, 
          location: "https://seo-vtdt-project.vercel.app/", 
-         button: buttonName
-        },
-        {
-         title: "Magic 8-Ball", 
-         desc: project4Explanation, 
-         image: Magic8BallScreenshot, 
-         alt: project4Alt, 
-         location: "https://magic-8-ball-seven.vercel.app/", 
-         button: buttonName
+         location2: "https://github.com/KrievinsT/SEO", 
+         button: buttonName,
+         button2: button2Name
         },
         {
          title: "Small React Projects", 
@@ -87,7 +87,19 @@ export default function Middle(){
          image: SmallReactProjectsScreenshot, 
          alt: project5Alt, 
          location: "https://small-react-projects-eight.vercel.app/", 
-         button: buttonName
+         location2: "https://github.com/KingRavo18/SmallReactProjects", 
+         button: buttonName,
+         button2: button2Name
+        },
+        {
+         title: "Magic 8-Ball", 
+         desc: project4Explanation, 
+         image: Magic8BallScreenshot, 
+         alt: project4Alt, 
+         location: "https://magic-8-ball-seven.vercel.app/", 
+         location2: "https://github.com/KingRavo18/Magic-8-ball", 
+         button: buttonName,
+         button2: button2Name
         },
     ]
 
@@ -132,7 +144,7 @@ export default function Middle(){
             </section>
 
             <section ref={education} className={`duration-1000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[180px] opacity-0"}`}>
-                <h1 className="text-center text-white text-[3vw] px-[7vw]">{educationExplanation}</h1>
+                <h1 className="text-center text-white text-[3vw] px-[7vw] z-5">{educationExplanation}</h1>
             </section>
 
             <section className="p-[1.8vw] flex-col flex items-center h-auto">
@@ -157,7 +169,7 @@ export default function Middle(){
             </section>
 
             <section className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">
-                {projectsData.map(({ title, desc, image, alt, location, button }) => (
+                {projectsData.map(({ title, desc, image, alt, location, location2, button, button2 }) => (
                     <Projects 
                         key={title}
                         title={title} 
@@ -165,7 +177,9 @@ export default function Middle(){
                         image={image} 
                         alt={alt} 
                         location={location} 
+                        location2={location2} 
                         buttonName={button}
+                        button2Name={button2}
                     />
                 ))}
             </section>

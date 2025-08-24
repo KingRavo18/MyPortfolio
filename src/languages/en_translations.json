@@ -12,7 +12,7 @@
     "bigIntro2": "My greatest strengths focus on all things front-end and database related. However, I have ample experience with the backend as well. In my free time, I like reading novels, and I do try to write them myself. I am as thorough with my code as with any word I read or write for the sake of my art.",
     "bigIntro3": "Read further for details!",
     "imageAlt": "Image of Raivo Kingovskis",
-    "educationExplanation": "By gratuating Vidzeme Technology and Design Vocational school, I earned a diploma and a professional qualification as a PROGRAMMING TECHNICIAN",
+    "educationExplanation": "I gratuated Vidzeme Technology and Design Vocational school and earned a professional qualification as a PROGRAMMING TECHNICIAN",
     "experienceTitle": "EXPERIENCE",
     "experienceExplanation1": "For 6 months, I worked in an internship in the company SIA 'ETEKOS' where I made both the full front-end and some backend for multiple websites. This was also the time I earned experience working in a team with other interns",
     "experienceExplanation2": "Front-end: HTML, CSS, javascript, typescript and React on multiple projects. For front-end designs, I used Figma, Tailwind CSS and SCSS",
@@ -30,7 +30,8 @@
     "project3Alt": "SEO Webpage",
     "project4Alt": "Magic 8-Ball Webpage",
     "project5Alt": "Small React Projects Webpage",
-    "buttonName": "Visit"
+    "buttonName": "Visit",
+    "button2Name": "Code"
   },
   "footer": {
     "contactTitle": "Contact",

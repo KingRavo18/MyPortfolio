@@ -12,7 +12,7 @@
     "bigIntro2": "Priekšgalsistēmā man ir vislielākās spējas. Taču man ir pietiekoši pieredze darbojoties arī ar aizmugursistēmām. Man patīk lasīt romānus brīvajā laikā un cenšos arī savus rakstīt. Es esmu tikpat centīgs ar savu kodu kā ar katru vārdu kuru rakstu dēļ savas mākslas.",
     "bigIntro3": "Detaļas atradīsiet tālāk!",
     "imageAlt": "Raivo Kingovska Attēls",
-    "educationExplanation": "Pabeidzot Vidzemes Tehnoloģiju un Dizania Tehnikumu, es ieguvu diplomu un profesionālo kvalifikāciju kā PROGRAMMĒŠANAS TEHNIĶIS",
+    "educationExplanation": "Es pabeidzu Vidzemes Tehnoloģiju un Dizania Tehnikumu un guvu profesionālo kvalifikāciju kā PROGRAMMĒŠANAS TEHNIĶIS",
     "experienceTitle": "PIEREDZE",
     "experienceExplanation1": "6 mēnešus, es strādāju praksē kompānijā SIA 'ETEKOS', kur es veidoju gan pilnas priekšgalsistēmas un strādāju pie aizmugursistēmām vairākās tīmekļa vietnēs. Šis arī bija laiks, kur guvu zināšanas strādājot komandā ar citiem praktikantiem",
     "experienceExplanation2": "Priekšgalsistēms: HTML, CSS, javascript, typescript un React vairākos projektos. Priekš stila, es izmantoju Figma, Tailwind CSS un SCSS",
@@ -22,7 +22,7 @@
     "projectsTitle": "PROJEKTI",
     "project1Explanation": "Solo projekts, tīmekļa vietne viedota tikai dizaina pēc izmantojot React, javascript un Tailwind CSS. Man tika dots vietnes paraugs un es perfekti to pārveidoju ar visām animācijām.",
     "project2Explanation": "Solo projekts, tīmekļa vietne, kas satur piecus dažādus sarakstus, .pdf lasītāju un lietotāju kontus, veidots ar pilnu priekšgalsistēmu ar javascript un animācijām, un PHP aizmugursistēmu ar SQL datubāzi.",
-    "project3Explanation": "Komandas projekts veidots ar diviem biedriem, kur mēs pievienojām jau-izveidotaik tīmekļa vietnei spēju vilkt meklēšanas resultātus priekš citām vietnēm no api, izmantojot tikai tās vietnes hipersaiti.",
+    "project3Explanation": "Komandas projekts veidots ar diviem biedriem, kur mēs pievienojām jau-izveidotai tīmekļa vietnei spēju vilkt meklēšanas resultātus priekš citām vietnēm no api, izmantojot tikai tās vietnes hipersaiti.",
     "project4Explanation": "Izveidots prieka pēc ar javascript un vienkāršu css. Īsts, neapstrīdams meistardarbs.",
     "project5Explanation": "React tīmekļa vietne veidota ar typescript un scss dizaina tehnoloģiju, kur es lieku visus savus mazos react projektus.",
     "project1Alt": "Sandbox Design Tīmekļa Vietne",
@@ -30,7 +30,8 @@
     "project3Alt": "SEO Tīmekļa Vietne",
     "project4Alt": "Magic 8-Ball Tīmekļa Vietne",
     "project5Alt": "Mazi React projekti",
-    "buttonName": "Doties Uz"
+    "buttonName": "Doties Uz",
+    "button2Name": "Kods"
   },
   "footer": {
     "contactTitle": "Kontakts",

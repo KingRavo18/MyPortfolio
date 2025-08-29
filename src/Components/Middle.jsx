@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useLanguage } from '../App.jsx';
 import Projects from './Projects/Projects.jsx';
@@ -106,6 +106,16 @@ export default function Middle(){
         threshold: 0.1   
     });
 
+    const educationExplanationGrow = (event) => {
+        event.target.style.paddingInline = "7vw";
+        event.target.style.fontSize = "3vw";
+    }
+
+    const educationExplanationShrink = (event) => {
+        event.target.style.paddingInline = "35vw";
+        event.target.style.fontSize = "1vw";
+    }
+
     return(
         //The id is there to serve as a hook for the navigation bar
         <main id="introduction" className="pt-[4vw]"> 
@@ -138,7 +148,9 @@ export default function Middle(){
             </section>
 
             <section ref={education} className={`duration-1000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[180px] opacity-0"}`}>
-                <h1 className="text-center text-white text-[3vw] px-[7vw] z-5">{educationExplanation}</h1>
+                <h1 onMouseOver={educationExplanationGrow} onMouseOut={educationExplanationShrink} className="text-center text-white text-[1vw] px-[35vw] [transition:0.5s] z-5">
+                    {educationExplanation}
+                </h1>
             </section>
 
             <section className="p-[1.8vw] flex-col flex items-center h-auto">

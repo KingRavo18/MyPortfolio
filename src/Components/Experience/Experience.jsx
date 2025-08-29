@@ -22,7 +22,7 @@ export default function Experience({func, title, ID, desc1, desc2, desc3, desc4,
                      className={`bg-[#7a2dc2ff] rounded-[20px] w-[70vw] flex cursor-pointer justify-center items-center h-[8vw] ml-[1vw] mr-[1vw] [transition:0.5s] z-5
                                 hover:bg-[#272626] hover:border-[#7a2dc2] hover:border-[1px]            
                                 active:bg-[#1d1c1c] active:border-[#7e0fe6] active:border-[1px] duration-2000
-                                ${experianceIsVisible ? "mt-0 opacity-100" : "mt-[5vw] opacity-0"}`}
+                                ${experianceIsVisible ? "mt-[4vw] opacity-100" : "mt-[9vw] opacity-0"}`}
             >
                 <h1 className='text-[3.5vw] text-[white]'>{title || "Untitled"}</h1>
             </article>
@@ -31,7 +31,7 @@ export default function Experience({func, title, ID, desc1, desc2, desc3, desc4,
             <div id={ID} className={`w-[70vw] h-auto p-[1.8vw] bg-[#272626ff] border-[2px] border-[#7a2dc2ff] rounded-br-[20px] rounded-bl-[20px]
                                     duration-200 ${isVisible ? "mt-[-2.5vw] opacity-100" : "mt-[-8vw] opacity-0"} `}>
                 {experianceData.map((dataRow, index) => (
-                    <p key={index} className='text-[#c7c7c7ff] text-[1.7vw] mt-[10px] text-justify'>
+                    <p key={index} className='text-[#c7c7c7ff] text-[1.7vw] mt-[20px] text-justify'>
                         {dataRow}
                     </p>
                 ))}

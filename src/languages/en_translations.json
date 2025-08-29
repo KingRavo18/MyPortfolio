@@ -2,7 +2,7 @@
   "header": {
     "contact": "Contact",
     "projects": "Projects",
-    "experience": "Experience and Education",
+    "experience": "Education and Experience",
     "introduction": "Introduction",
     "hoverEN": "Language I like using",
     "hoverLV": "Birth language"
@@ -14,11 +14,10 @@
     "imageAlt": "Image of Raivo Kingovskis",
     "educationExplanation": "I gratuated Vidzeme Technology and Design Vocational school and earned a professional qualification as a PROGRAMMING TECHNICIAN",
     "experienceTitle": "EXPERIENCE",
-    "experienceExplanation1": "For 6 months, I worked in an internship in the company SIA 'ETEKOS' where I made both the full front-end and some backend for multiple websites. This was also the time I earned experience working in a team with other interns",
+    "experienceExplanation1": "For 6 months, I worked as an intern in the company SIA 'ETEKOS' where I made both the full front-end and some backend for multiple websites, at times in a team with other interns",
     "experienceExplanation2": "Front-end: HTML, CSS, javascript, typescript and React on multiple projects. For front-end designs, I used Figma, Tailwind CSS and SCSS",
     "experienceExplanation3": "Back-end: node.js and php, along with MySQL on phpMyAdmin",
-    "experienceExplanation4": "C++ and C#, the latter of which I used for Unity",
-    "experienceExplanation5": "All my projects and their code are available to view on Github. (See in the Contact section)",
+    "experienceExplanation4": "All my projects and their code are available to view on Github. (See in the Contact section)",
     "projectsTitle": "PROJECTS", 
     "project1Explanation": "A solo project webpage created just for the design using React, javascript and Tailwind CSS. I was provided with a sample and perfectly recreated it, animations and all.",
     "project2Explanation": "A solo project website composed of five different lists, a .pdf reader and user accounts, made using a full front-end with javascript and animations, and PHP backend alongside a SQL database.",

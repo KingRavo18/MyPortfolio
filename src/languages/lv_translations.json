@@ -2,7 +2,7 @@
   "header": {
     "contact": "Kontakts",
     "projects": "Projekti",
-    "experience": "Pieredze un Izglītība",
+    "experience": "Izglītība un Pieredze",
     "introduction": "Iepazīšanās",
     "hoverEN": "Valoda kuru patīk izmantot",
     "hoverLV": "Dzimtā valoda"
@@ -14,11 +14,10 @@
     "imageAlt": "Raivo Kingovska Attēls",
     "educationExplanation": "Es pabeidzu Vidzemes Tehnoloģiju un Dizania Tehnikumu un guvu profesionālo kvalifikāciju kā PROGRAMMĒŠANAS TEHNIĶIS",
     "experienceTitle": "PIEREDZE",
-    "experienceExplanation1": "6 mēnešus, es strādāju praksē kompānijā SIA 'ETEKOS', kur es veidoju gan pilnas priekšgalsistēmas un strādāju pie aizmugursistēmām vairākās tīmekļa vietnēs. Šis arī bija laiks, kur guvu zināšanas strādājot komandā ar citiem praktikantiem",
+    "experienceExplanation1": "6 mēnešus, es strādāju ka praktikants kompānijā SIA 'ETEKOS', kur es veidoju gan pilnas priekšgalsistēmas un strādāju pie aizmugursistēmām vairākās tīmekļa vietnēs, laiku pa laikam darbojos komandā ar citiem praktikantiem",
     "experienceExplanation2": "Priekšgalsistēms: HTML, CSS, javascript, typescript un React vairākos projektos. Priekš stila, es izmantoju Figma, Tailwind CSS un SCSS",
     "experienceExplanation3": "Aizmugursistēmas: node.js un php, kopā ar MySQL un phpMyAdmin",
-    "experienceExplanation4": "C++ un C#, no kuriem otro izmantoju priekš Unity",
-    "experienceExplanation5": "Visi mani projekti un to kods ir redzami saitē GitHub. (Redzat Kontakta sekcijā)",
+    "experienceExplanation4": "Visi mani projekti un to kods ir redzami saitē GitHub. (Redzat Kontakta sekcijā)",
     "projectsTitle": "PROJEKTI",
     "project1Explanation": "Solo projekts, tīmekļa vietne viedota tikai dizaina pēc izmantojot React, javascript un Tailwind CSS. Man tika dots vietnes paraugs un es perfekti to pārveidoju ar visām animācijām.",
     "project2Explanation": "Solo projekts, tīmekļa vietne, kas satur piecus dažādus sarakstus, .pdf lasītāju un lietotāju kontus, veidots ar pilnu priekšgalsistēmu ar javascript un animācijām, un PHP aizmugursistēmu ar SQL datubāzi.",

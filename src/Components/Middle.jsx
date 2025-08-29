@@ -7,7 +7,7 @@ import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png';
 import SEO_Screenshot from '../assets/SEO_screenshot.png';
 import SandboxScreenshot from '../assets/Sandbox_screenshot.png';
 import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png';
-import AuthorsFace from '../assets/Authors_Face.png';
+import AuthorsFace from '../assets/Authors_Face.jpg';
 import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png';
 
 export default function Middle(){

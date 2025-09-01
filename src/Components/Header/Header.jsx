@@ -26,7 +26,7 @@ export default function Header(){
             <nav className="language">
                 <ul>
                     {translationButtons.map(({ languageSelected, title, hover }) => (
-                    <li className="float-right text-[1.35vw]" key={title}>
+                    <li className="float-right text-[6vw] xl:text-[1.35vw]" key={title}>
                         <button className="cursor-pointer p-[0.4vw] rounded-[5px] [transition:0.5s] text-[2vw]
                                            hover:text-[#8527dd] hover:bg-[#35333380] hover:text-[2.1vw]
                                            active:text-[#8433cf] active:bg-[#4745456b] active:text-[2.2vw]" 

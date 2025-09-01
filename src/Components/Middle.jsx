@@ -169,9 +169,9 @@ export default function Middle(){
 
             <section ref={projectTitle} id="projects" className={`flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full duration-2000
                                                                  ${projectTitleIsVisible ? "my-[3.8vw] opacity-100" : "my-[5vw] opacity-0"}`}>
-                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
-                <h1 className="text-[white] text-[6vw]">{projectsTitle}</h1>
-                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[3vw] h-[2.6vw] xl:w-[0.8vw] xl:h-[0.8vw]"/>
+                <h1 className="text-[white] text-[13vw] xl:text-[6vw]">{projectsTitle}</h1>
+                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[3vw] h-[2.6vw] xl:w-[0.8vw] xl:h-[0.8vw]"/>
             </section>
 
             <section className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">

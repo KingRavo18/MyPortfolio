@@ -30,7 +30,9 @@ export default function Header(){
                         <button className="cursor-pointer p-[0.4vw] rounded-[5px] [transition:0.5s] text-[2vw]
                                            hover:text-[#8527dd] hover:bg-[#35333380] hover:text-[2.1vw]
                                            active:text-[#8433cf] active:bg-[#4745456b] active:text-[2.2vw]" 
-                                           onClick={() => setLanguage(languageSelected)}
+                                           onClick={() => {
+                                            setLanguage(languageSelected);
+                                           }}
                                            title={hover}
                         >
                             {title}

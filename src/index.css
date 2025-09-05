@@ -16,3 +16,14 @@ html, body {
   100% {top:0px;}
 }
 
+.blackscreen{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  animation-name: blackScreen;
+  animation-duration: 2s;
+  z-index: 2000;
+}

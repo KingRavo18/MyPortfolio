@@ -119,25 +119,25 @@ export default function Middle(){
     return(
         //The id is there to serve as a hook for the navigation bar
         <main id="introduction" className="pt-[4vw]"> 
-            <section className="flex justify-center items-center gap-[2vw] w-full h-[90vh]">
-                <div className="bg-[#c7c7c7ff] rounded-tr-[20px] rounded-br-[20px] w-[33.8vw] h-[31.8vw] overflow-hidden">
+            <section className="w-full h-[30vh] xl:h-[90vh] flex justify-center items-center gap-[2vw]">
+                <div className="bg-[#c7c7c7ff] w-[33.8vw] h-[31.8vw] rounded-tr-[20px] rounded-br-[20px] overflow-hidden">
                     <img src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} className="w-full h-full block object-cover"/>
                 </div>
 
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[9vw]"/>
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[16vw]"/>
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[23vw]"/>
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[30vw]"/>
-                <span className="absolute rounded-[10px] bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw]" id="experience"/>
+                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[9vw] absolute rounded-[10px]"/>
+                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[16vw] absolute rounded-[10px]"/>
+                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[23vw] absolute rounded-[10px]"/>
+                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[30vw] absolute rounded-[10px]"/>
+                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw] absolute rounded-[10px]" id="experience"/>
 
                 {/* The page where my introduction will be written */}
-                <div className="rounded-tl-[20px] rounded-bl-[20px] bg-[#272626ff] border-l-2 border-[#7a2dc2ff] w-[33.8vw] h-[31.8vw] [box-shadow:10px_10px_5px_rgb(38,36,36)]">
-                    <div className="flex h-auto justify-center items-center gap-[1vw]">
-                        <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                <div className="bg-[#272626ff] w-[33.8vw] h-[31.8vw] rounded-tl-[20px] rounded-bl-[20px] border-[#7a2dc2ff] border-l-2 [box-shadow:10px_10px_5px_rgb(38,36,36)]">
+                    <div className="h-auto flex justify-center items-center gap-[1vw]">
+                        <span className="bg-[#7a2dc2ff] w-[0.8vw] h-[0.8vw] rounded-[50%]"/>
                         <h1 className="text-[white] text-[2.5vw] p-0 -mt-[0.2vw]">Raivo Kingovskis</h1>
-                        <span className="bg-[#7a2dc2ff] rounded-[50%] w-[0.8vw] h-[0.8vw]"/>
+                        <span className="bg-[#7a2dc2ff] w-[0.8vw] h-[0.8vw] rounded-[50%]"/>
                     </div>
-                    <p className="text-[#c7c7c7ff] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-[1.48vw] text-justify">
+                    <p className="text-[#c7c7c7ff] text-[1.48vw] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-justify">
                         {bigIntro1}
                         <br/>
                         {bigIntro2}
@@ -148,12 +148,12 @@ export default function Middle(){
             </section>
 
             <section ref={education} className={`duration-1000 ${educationIsVisible ? "my-[80px] opacity-100" : "my-[180px] opacity-0"}`}>
-                <h1 onMouseOver={educationExplanationGrow} onMouseOut={educationExplanationShrink} className="text-center text-white text-[1vw] px-[35vw] [transition:0.5s] z-5">
+                <h1 onMouseOver={educationExplanationGrow} onMouseOut={educationExplanationShrink} className="text-white text-[1vw] text-center px-[35vw] [transition:0.5s] z-5">
                     {educationExplanation}
                 </h1>
             </section>
 
-            <section className="p-[1.8vw] flex-col flex items-center h-auto">
+            <section className="h-auto p-[1.8vw] flex flex-col items-center">
                     <Experience 
                         func={() => togglePopup("Experience_Popup")} 
                         ID="Experience_Popup"
@@ -167,14 +167,14 @@ export default function Middle(){
                     />
             </section>
 
-            <section ref={projectTitle} id="projects" className={`flex justify-center items-center gap-[10px] my-[3.8vw] h-auto w-full duration-2000
+            <section ref={projectTitle} id="projects" className={`h-auto w-full my-[3.8vw] duration-2000 flex justify-center items-center gap-[10px]
                                                                  ${projectTitleIsVisible ? "my-[3.8vw] opacity-100" : "my-[5vw] opacity-0"}`}>
-                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[3vw] h-[2.6vw] xl:w-[0.8vw] xl:h-[0.8vw]"/>
+                <span className="bg-[#7a2dc2ff] w-[3vw] xl:w-[0.8vw] h-[2.6vw] xl:h-[0.8vw] rounded-[50%]"/>
                 <h1 className="text-[white] text-[13vw] xl:text-[6vw]">{projectsTitle}</h1>
-                <span className="bg-[#7a2dc2ff] rounded-[50%] w-[3vw] h-[2.6vw] xl:w-[0.8vw] xl:h-[0.8vw]"/>
+                <span className="bg-[#7a2dc2ff] w-[3vw] xl:w-[0.8vw] h-[2.6vw] xl:h-[0.8vw] rounded-[50%]"/>
             </section>
 
-            <section className="flex justify-center h-auto my-[1vw] w-full gap-[4vw] flex-wrap">
+            <section className="w-full h-auto my-[1vw] flex justify-center flex-wrap gap-[4vw]">
                 {projectsData.map(({ title, desc, image, alt, location, location2, button, button2 }) => (
                     <Projects 
                         key={title}

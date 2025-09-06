@@ -120,18 +120,18 @@ export default function Middle(){
         //The id is there to serve as a hook for the navigation bar
         <main id="introduction" className="pt-[4vw]"> 
             <section className="w-full h-[30vh] xl:h-[90vh] flex justify-center items-center gap-[2vw]">
-                <div className="bg-[#c7c7c7ff] w-[33.8vw] h-[31.8vw] rounded-tr-[20px] rounded-br-[20px] overflow-hidden">
-                    <img src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} className="w-full h-full block object-cover"/>
+                <div className="bg-[#c7c7c7ff] w-[32vw] h-[31.8vw] rounded-tr-[20px] rounded-br-[20px] overflow-hidden [box-shadow:10px_10px_5px_black] z-100 openImageAnimation">
+                    <img src={AuthorsFace} alt={imageAlt || "Image of Raivo Kingovskis"} className="w-full h-full block"/>
                 </div>
 
-                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[9vw] absolute rounded-[10px]"/>
-                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[16vw] absolute rounded-[10px]"/>
-                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[23vw] absolute rounded-[10px]"/>
-                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[30vw] absolute rounded-[10px]"/>
-                <span className="bg-[#7a2dc2ff] w-[4.4vw] h-[0.5vw] left-[47.2vw] top-[37vw] absolute rounded-[10px]" id="experience"/>
+                <span className="bookRings top-[9vw] z-101"/>
+                <span className="bookRings top-[16vw] z-101"/>
+                <span className="bookRings top-[23vw] z-101"/>
+                <span className="bookRings top-[30vw] z-101"/>
+                <span className="bookRings top-[37vw] z-101" id="experience"/>
 
                 {/* The page where my introduction will be written */}
-                <div className="bg-[#272626ff] w-[33.8vw] h-[31.8vw] rounded-tl-[20px] rounded-bl-[20px] border-[#7a2dc2ff] border-l-2 [box-shadow:10px_10px_5px_rgb(38,36,36)]">
+                <div className="bg-[#272626ff] w-[33.8vw] h-[31.8vw] rounded-tl-[20px] rounded-bl-[20px] border-[#7a2dc2ff] border-l-2 [box-shadow:10px_10px_5px_black]">
                     <div className="h-auto flex justify-center items-center gap-[1vw]">
                         <span className="bg-[#7a2dc2ff] w-[0.8vw] h-[0.8vw] rounded-[50%]"/>
                         <h1 className="text-[white] text-[2.5vw] p-0 -mt-[0.2vw]">Raivo Kingovskis</h1>

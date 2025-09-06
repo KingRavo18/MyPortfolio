@@ -23,7 +23,7 @@ export default function Header(){
     ]
 
     return(
-        <header className="bg-[#242323ff] w-full h-[5vw] px-[1.65vw] py-[0] fixed [animation-name:headerSlidingDown] [animation-duration:0.5s] 
+        <header className="bg-[#242323ff] w-full h-[5vw] px-[1.65vw] py-[0] fixed [animation-name:headerSlidingDown] [animation-duration:2s] 
                             [box-shadow:0_10px_10px_rgb(38,36,36)] z-1000 flex items-center justify-between 
                            text-[#c7c7c7ff]"
         >

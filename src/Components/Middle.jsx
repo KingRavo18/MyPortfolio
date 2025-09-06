@@ -131,7 +131,7 @@ export default function Middle(){
                 <span className="bookRings top-[37vw] z-101" id="experience"/>
 
                 {/* The page where my introduction will be written */}
-                <div className="bg-[#272626ff] w-[33.8vw] h-[31.8vw] rounded-tl-[20px] rounded-bl-[20px] border-[#7a2dc2ff] border-l-2 [box-shadow:10px_10px_5px_black]">
+                <div className="bg-[#242323ff] w-[33.8vw] h-[31.8vw] rounded-tl-[20px] rounded-bl-[20px] border-[#7a2dc2ff] border-l-2 [box-shadow:10px_10px_5px_black]">
                     <div className="h-auto flex justify-center items-center gap-[1vw]">
                         <span className="bg-[#7a2dc2ff] w-[0.8vw] h-[0.8vw] rounded-[50%]"/>
                         <h1 className="text-[white] text-[2.5vw] p-0 -mt-[0.2vw]">Raivo Kingovskis</h1>

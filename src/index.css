@@ -10,12 +10,6 @@ html, body{
   font-family: Calibri, Arial, Helvetica, sans-serif;
 }
 
-@keyframes headerSlidingDown{
-  0%   {top:-100vw;}
-  50%   {top:-10vw;}
-  100% {top:0px;}
-}
-
 .blackscreen{
   background-color: black;
   height: 100%;
@@ -42,3 +36,10 @@ html, body{
     opacity: 0;
   }
 }
+
+@keyframes headerSlidingDown{
+  0%   {top:-100vw;}
+  50%   {top:-10vw;}
+  100% {top:0px;}
+}
+

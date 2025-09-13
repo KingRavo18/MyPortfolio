@@ -19,7 +19,8 @@ export default function Experience({func, title, ID, desc1, desc2, desc3, desc4,
         <>  
             <article onClick={func} 
                      ref={experiance}
-                     className={`bg-[#7a2dc2ff] w-[90vw] xl:w-[70vw] h-[16vw] xl:h-[8vw] ml-[1vw] mr-[1vw] rounded-[20px] [transition:0.5s] cursor-pointer z-5
+                     className={`bg-[#7a2dc2ff] w-[90vw] xl:w-[70vw] h-[16vw] xl:h-[8vw] ml-[1vw] mr-[1vw] rounded-[20px] [transition:0.5s] 
+                                cursor-pointer z-5
                                 flex justify-center items-center  
                                 hover:bg-[#272626] hover:border-[#7a2dc2] hover:border-[1px]            
                                 active:bg-[#1d1c1c] active:border-[#7e0fe6] active:border-[1px] duration-2000

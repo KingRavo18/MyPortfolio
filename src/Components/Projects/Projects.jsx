@@ -14,7 +14,7 @@ export default function Projects({image, alt, title, explanation, location, loca
 
     return(
         <article ref={project} className={`bg-[#272626ff] xl:w-[42vw] w-[90vw] xl:h-[32vw] h-[120vw] border-[#7a2dc2ff] border-[2px] 
-                                           rounded-[20px] [transition:0.5s] duration-2000
+                                           rounded-[20px] [transition:0.5s] duration-2000 [box-shadow:10px_10px_5px_black]
                                            hover:border-[#8527ddff] hover:border-[2px] hover:ml-[0] hover:mr-[0] hover:-my-[1.5vw] 
                                            ${projectIsVisible ? "mt-0 opacity-100" : "mt-[5vw] opacity-0"}`}
         >

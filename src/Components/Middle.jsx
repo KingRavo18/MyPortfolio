@@ -137,7 +137,7 @@ export default function Middle(){
                         <h1 className="text-[white] text-[2.5vw] p-0 -mt-[0.2vw]">Raivo Kingovskis</h1>
                         <span className="bg-[#7a2dc2ff] w-[0.8vw] h-[0.8vw] rounded-[50%]"/>
                     </div>
-                    <p className="text-[#c7c7c7ff] text-[1.48vw] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-justify">
+                    <p className="text-[#c7c7c7ff] text-[1.42vw] mt-[0.2vw] mr-[1.3vw] mb-[1.4vw] ml-[2vw] text-justify">
                         {bigIntro1}
                         <br/>
                         {bigIntro2}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useLanguage } from '../App.jsx';
 import Projects from './Projects/Projects.jsx';
@@ -6,7 +6,7 @@ import Experience from './Experience/Experience.jsx';
 import DisciplinatorsScreenshot from '../assets/Disciplinators_screenshot.png';
 import SEO_Screenshot from '../assets/SEO_screenshot.png';
 import SandboxScreenshot from '../assets/Sandbox_screenshot.png';
-import Magic8BallScreenshot from '../assets/Magic_8-Ball_Screenshot.png';
+import FlowerBlogScreenshot from '../assets/flower-blog_Screenshot.jpg';
 import AuthorsFace from '../assets/Authors_Face.jpg';
 import SmallReactProjectsScreenshot from '../assets/SmallReactProjects_screenshot.png';
 
@@ -86,12 +86,12 @@ export default function Middle(){
          button2: button2Name
         },
         {
-         title: "Magic 8-Ball", 
+         title: "Flower-Blog", 
          desc: project4Explanation, 
-         image: Magic8BallScreenshot, 
+         image: FlowerBlogScreenshot, 
          alt: project4Alt, 
-         location: "https://magic-8-ball-seven.vercel.app/", 
-         location2: "https://github.com/KingRavo18/Magic-8-ball", 
+         location: "", 
+         location2: "https://github.com/KingRavo18/Flower-Blog", 
          button: buttonName,
          button2: button2Name
         },

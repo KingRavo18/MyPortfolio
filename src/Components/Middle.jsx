@@ -80,7 +80,7 @@ export default function Middle(){
          desc: project4Explanation, 
          image: FlowerBlogScreenshot, 
          alt: project4Alt, 
-         location: "flower-blog.atwebpages.com/index.html", 
+         location: "http://flower-blog.atwebpages.com/index.html", 
          location2: "https://github.com/KingRavo18/Flower-Blog", 
          button: buttonName,
          button2: button2Name

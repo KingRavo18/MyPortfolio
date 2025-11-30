@@ -76,22 +76,22 @@ export default function Middle(){
          button2: button2Name
         },
         {
+         title: "Flower-Blog", 
+         desc: project4Explanation, 
+         image: FlowerBlogScreenshot, 
+         alt: project4Alt, 
+         location: "flower-blog.atwebpages.com/index.html", 
+         location2: "https://github.com/KingRavo18/Flower-Blog", 
+         button: buttonName,
+         button2: button2Name
+        },
+        {
          title: "Small React Projects", 
          desc: project5Explanation, 
          image: SmallReactProjectsScreenshot, 
          alt: project5Alt, 
          location: "https://small-react-projects-eight.vercel.app/", 
          location2: "https://github.com/KingRavo18/SmallReactProjects", 
-         button: buttonName,
-         button2: button2Name
-        },
-        {
-         title: "Flower-Blog", 
-         desc: project4Explanation, 
-         image: FlowerBlogScreenshot, 
-         alt: project4Alt, 
-         location: "https://github.com/KingRavo18/Flower-Blog", 
-         location2: "https://github.com/KingRavo18/Flower-Blog", 
          button: buttonName,
          button2: button2Name
         },
